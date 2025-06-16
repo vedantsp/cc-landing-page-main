@@ -1,0 +1,118 @@
+.rounded-header {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 70px;
+    padding: 1.2rem;
+    margin: 2rem;
+    z-index: 1;
+    position-anchor: fixed;
+  }
+  
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: white;
+    /* background-color: #a879e3; */
+    padding: 0.3rem 1rem;
+    border-radius: 15px;
+    text-decoration: none;
+    font-family: 'BasierCircle-Regular', sans-serif;
+    font-weight: bold;
+  }
+  
+  .btns button {
+    margin-left: 0.5rem;
+    padding: 0.4rem 1rem;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .btn-login { background-color: #ff7b7b; color: white; }
+  .btn-create_a_profile  { background-color: #62c384; color: white; }
+  .btn-logout { background-color: #f44d75; color: rgb(255, 255, 255);
+  height:32px;
+  width: 80px; 
+  border-color: #f44d75;
+  border-radius:20px;
+  }
+  .btn-logout:hover{
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+  .rounded-header {
+    padding: 0.8rem 1rem;
+    margin: 1rem;
+    border-radius: 50px;
+  }
+
+  .header-top {
+    gap: 1rem;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+    padding: 0.2rem 0.8rem;
+  }
+
+  .btns button {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .btn-logout {
+  height:24px;
+  width: 50px; 
+  border-color: #f44d75;
+  border-radius:20px;
+  font-size: 0.6rem;
+  }
+
+  .nav-bar button {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.7rem;
+  }
+}
+
+/* Scale down for small screens (mobile) WITHOUT layout break */
+@media (max-width: 475px) {
+  .rounded-header {
+    padding: 0.6rem 0.8rem;
+    margin: 0.8rem;
+    border-radius: 40px;
+  }
+
+  .logo {
+    font-size: 1rem;
+    padding: 0.2rem 0.6rem;
+  }
+
+  .btns {
+    flex-direction: row;         /* Keep row layout */
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.3rem;
+  }
+
+  .btns button {
+    font-size: 0.5rem;
+    padding: 0.3rem 0.6rem;
+    width: auto;
+  }
+
+  .nav-bar button {
+    font-size: 0.6rem;
+    padding: 0.2rem 0.5rem;
+  }
+  
+}
+
+
+
+

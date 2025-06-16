@@ -1,0 +1,90 @@
+/* overlay dims the page behind */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  /* frosted glass panel */
+  .modal-content {
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    padding: 24px;
+    border-radius: 16px;
+  
+    /* semi-transparent white + blur */
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(12px);
+  
+    /* subtle shadow */
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  }
+  
+  /* the top-right × button */
+  .modal-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: none;
+    border: none;
+    font-size: 2rem;           /* bigger X */
+    font-weight: bold;         /* heavier stroke */
+    color: #222;               /* dark color for contrast */
+    text-shadow: 0 0 2px #fff; /* optional glow for readability */
+    cursor: pointer;
+    line-height: 1;            /* center the X in its line */
+    padding: 4px;              /* clicks area */
+    border-radius: 50%;        /* make it round if you like */
+  }
+  
+  .modal-close:hover {
+    color: #000;               /* even darker on hover */
+    text-shadow: 0 0 4px #fff;
+  }
+  
+  /* your form inputs */
+  .modal-content label {
+    display: block;       /* make sure it sits above the input */
+    margin-bottom: 3px;   /* ← gap between label and field */
+    font-weight: 600;
+  }
+  .modal-content input,
+  .modal-content textarea {
+    width: 100%;
+    background: rgba(255,255,255,0.8);
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 16px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  /* fixed textarea height */
+  .modal-content textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  /* single primary button */
+  .modal-content .btn-submit {
+    width: 100%;
+    padding: 14px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #58ce7c 0%, #1db84c 100%);
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  .modal-content .btn-submit:hover {
+    opacity: 0.9;
+  }
+  

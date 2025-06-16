@@ -1,0 +1,229 @@
+.footer-container {
+  background: #FF8C6B;
+  color: white;
+  padding: 3rem 2rem;
+  font-family: 'BasierCircle-Regular', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-left {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 2rem;
+}
+
+.footer-tagline {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.footer-tagline .italic-bold {
+  font-family: 'PlayfairDisplay-Italic';
+  font-weight: bold;
+  font-style: italic;
+  
+}
+.footer-tagline .italic-bold-2 {
+  font-family: 'PlayfairDisplay-Italic';
+  font-weight: bold;
+  font-style: italic;
+  padding-right: 196px;
+  
+}
+
+.footer-tagline .bold {
+  font-weight: bold;
+  padding-left: 50px;
+}
+
+.footer-right {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  padding-left: 5rem;
+}
+
+.newsletter-label {
+  font-size: 1.2rem;
+  font-weight: 900;
+  text-transform: lowercase;
+}
+
+.newsletter-input {
+  width: 21rem;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.loop-label {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+  .sparkle-icon {
+    position: absolute;
+    top: -5px;     /* adjust as needed */
+    right: 56.5rem;  /* position to top-right corner */
+    width: 100px;
+    height: 100px;
+    animation: twinkle 1.5s infinite ease-in-out;
+  }
+
+.social-footer {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .social-footer p {
+    font-weight: normal;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding-left: 10rem;
+  }
+  
+  .footer-arrow {
+    position: absolute;
+    top: 20px;
+    right: -40px;
+    width: 50px;
+    height: auto;
+    filter: invert(1) brightness(2);
+  }
+  
+  .footer-tags {
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+    margin-top: 0.3rem;
+  }
+  
+  .footer-tags a {
+    background: #ffffff;
+    color: #FF8C6B;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+  }
+  
+  .footer-tags a:hover {
+    background: #FF8C6B;
+    color: #ffffff;
+  }
+  .copy {
+    margin-top: 6rem;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: #ffffff;
+  }
+
+  @media (max-width: 768px) {
+  .footer-container {
+    padding: 2rem 1rem;
+  }
+
+  .footer-content {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+ 
+
+  .footer-tagline {
+    font-size: 0.8rem;
+    line-height: 1.2;
+  }
+
+  .sparkle-icon {
+    width: 60px;
+    height: 60px;
+    top: -3px;
+    right: 11rem;
+  }
+  .footer-tagline .bold {
+    padding-left:14px;
+}
+.footer-tagline .italic-bold-2 {
+    padding-right: 65px;
+}
+
+
+
+
+  .newsletter-label {
+    font-size: 0.6rem;
+  }
+
+  
+
+  .footer-tags a {
+    font-size: 0.5rem;
+    padding: 0.1rem 0.4rem;
+  }
+
+  .footer-tags-p {
+    font-size: 0.4rem;
+    padding-left: 0;
+  }
+  .social-footer p{
+    font-size: 0.4rem;
+     padding-left: 105px;
+  }
+
+  .footer-arrow {
+    width: 35px;
+    top: 15px;
+    right: -25px;
+  }
+
+  .email-link {
+    font-size: 0.6rem;
+  }
+
+  .copy {
+    font-size: 0.6rem;
+    margin-top: 3rem;
+  }
+}
+
+.subscribe-button .btn-submit {
+  width: 8rem;
+  padding: 14px;
+  margin-top: 8px;
+
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #58ce7c 0%, #1db84c 100%);
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  
+}
+
+
+
+.subscribe-button .btn-submit:hover {
+ opacity:0.9;
+}

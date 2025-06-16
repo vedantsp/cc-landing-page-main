@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'PlayfairDisplay-Italic';
+  src: url('../../../public/images/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+.partner-body{
+  padding-top: 3rem;
+    padding-left: 2rem;
+  padding-right: 2rem;
+  background: linear-gradient(
+    to bottom,
+    #5ab17e 0%,
+    #ffffff 80%   
+  );
+}
+.partner-form {
+    max-width: 800px;
+    margin: 5rem auto;
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* .partner-bubble {
+  background: white;
+  opacity: 0.9;
+  border-radius: 25px 25px 25px 0;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+} */
+
+.partner-bubble h3 {
+  font-family: 'PlayfairDisplay-Italic';
+  font-style: italic;
+  font-weight: 900;
+  font-size: 2.5rem;
+  color: #111;
+  margin-bottom: 1rem;
+}
+
+.partner-bubble p {
+  font-family: 'BasierCircle-Regular', sans-serif;
+  color: #333;
+  font-size: 1.2rem;
+  margin: 0;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+  
+  .partner-contact {
+    background: linear-gradient(to bottom, rgba(255,255,255,0.3), rgba(189,224,254,0.3));
+    padding: 3rem;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    margin-top: 5rem;
+  }
+  .partner-contact ::placeholder{
+    /* color: rgb(0, 0, 0); */
+    font-weight: 400;
+  }
+  
+  .partner-contact input,
+  .partner-contact textarea {
+    border: none;
+    border-radius: 8px;
+    padding: 0.9rem;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    resize: none;
+  }
+  
+  .partner-contact button {
+    background-color: #ff895d;
+    color: white;
+    padding: 1rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-end;
+    width: 150px;
+  }
+  .partner-form h3{
+    color: rgb(0, 0, 0);
+    padding-top: 4rem;
+  }
