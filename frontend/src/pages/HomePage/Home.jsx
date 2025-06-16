@@ -5,6 +5,7 @@ import { toast } from "react-toastify";
 import Header from "../../components/Header/Header";
 import { Navbar } from "../../components/NavbarComponent/Navbar";
 import Footer from "../../components/Footer/Footer";
+import AnimatedChatBot from "../../components/Animationchat/AnimationChatBot";
 const API_URL = process.env.REACT_APP_BACKEND_URL;
 
 
@@ -50,7 +51,7 @@ export const Home = () => {
         <Header/>
 
 
-        <h1>Clean living starts here</h1>
+        <h1>clean living starts here</h1>
         <p>
           The platform for <em>clean</em> fashion, beauty, and wellness.
         </p>
@@ -105,9 +106,7 @@ export const Home = () => {
           <strong>adjective</strong>
         </p>
         <p className="definition-text">
-          A new standard for conscious living, describes products and practices
-          that are responsibly made, cruelty-free, circular, low waste, and high
-          quality.
+          A new standard for conscious living. Refers to products and practices that are responsibly created, health-conscious, high-quality, cruelty-free, and designed with circularity and/or low waste in mind.
         </p>
         <p className="example">
           <em>
@@ -147,7 +146,7 @@ export const Home = () => {
           </div>
           <div
             className="circle small"
-            style={{ backgroundImage: "url('/images/img1.png')" }}
+            style={{ backgroundImage: "url('/images/wellness.jpg')" }}
           >
             <span>wellness</span>
           </div>
@@ -175,8 +174,7 @@ export const Home = () => {
         </div>
       </div> */}
 
-      <div className="chat-ui-box">
-  {/* Search input inside the chat box */}
+      {/* <div className="chat-ui-box">
   <div className="search-bar-ui">
     <i className="fas fa-search search-icon"></i>
     <input
@@ -187,7 +185,7 @@ export const Home = () => {
     <i className="fas fa-microphone mic-icon"></i>
   </div>
 
-  {/* Chat conversation */}
+
   <div className="chat-container">
     <div className="chat user">
       The best places in London for vintage fashion?
@@ -216,7 +214,8 @@ export const Home = () => {
       </ul>
     </div>
   </div>
-</div>
+</div> */}
+<AnimatedChatBot/>
 
 
       {/* <section className="definition">
@@ -264,7 +263,7 @@ export const Home = () => {
 
 
       <section className="signup-box-home">
-        <h2>Create a profile</h2>
+        <h2>create a profile</h2>
         <p>
           The first 1000 sign-ups receive free perks and benefits for life -
           including product discounts, exclusive content, first access to

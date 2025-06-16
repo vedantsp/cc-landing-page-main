@@ -21,26 +21,29 @@ export const AboutUs = () => {
       {/* Hero Section */}
       <section className="hero-section">
         <div className="hero-container">
-          <h1 className="hero-title">
+          {/* <h1 className="hero-title">
             We're building the future of <em>clean living</em>
             <br />
             —powered by AI, shaped by <em>community</em>,
             <br />
             and driven by <em>impact</em>.
-          </h1>
+          </h1> */}
+          <div className="hero-title-img">
+  <img src="/images/hero-title-img.png" alt="We're building the future of clean living" />
+</div>
 
           <p className="hero-subtitle">
-            CleanClick makes it easy to live well with cleaner choices that support your health, your values, and the planet.
+            CleanClick makes it easy to live well and make cleaner choices that support your health, your values and the planet.
           </p>
 
-          <div className="hero-description">
+          {/* <div className="hero-description">
             <p>Enjoy content without the brain-rot,</p>
             <p>connect with like-minded people,</p>
             <p>discover clean brands and shop better,</p>
             <p className="hero-emphasis">
               ...all in one playful, purposeful platform.
             </p>
-          </div>
+          </div> */}
 
           {/* Pick Your Fighter Section */}
           <div className="fighter-section">
@@ -108,12 +111,9 @@ export const AboutUs = () => {
           </div>
 
           <div className="we-com">
-          <p className="we-com-tag">
-            <img src="/images/spark.png" alt="sparkle" className="sparkle-icon-a" />
-            we’re a <span className="italic-bold">community-led</span><br />
-            <span className="bold">AI-powered platform for</span><br />
-            <span className="italic-bold-2">clean living.</span>
-          </p>
+          <div className="we-com-tagline-img">
+  <img src="/images/footer-image.png" alt="AI-powered clean living tagline" />
+</div>
         </div>
         </div>
       </section>
@@ -152,24 +152,24 @@ export const AboutUs = () => {
         <div className="solution-container">
           <div className="solution-content">
             <h2>Our Solution</h2>
-                <h3>Curated discovery:</h3>
+                <h3>Curated discovery</h3>
                 <p>
-                  Find vetted, clean-living brands tailored to your lifestyle.
+                  Find vetted, clean-living brands tailored to your lifestyle
                 </p>
-                <h3>Engaging content:</h3>
+                <h3>Engaging content</h3>
                 <p>
                   Scroll without the "brainrot"—quality videos, guides, and
-                  stories that inform and delight.
+                  stories that inform and delight
                 </p>
-                <h3>Social connection:</h3>
+                <h3>Social connection</h3>
                 <p>
                   Connect with like-minded people, share tips, and amplify
-                  authentic voices.
+                  authentic voices
                 </p>
-                <h3>Seamless shopping:</h3>
+                <h3>Seamless shopping</h3>
                 <p>
                   Buy better products from brands with purpose—all in one
-                  intuitive environment.
+                  intuitive environment
                 </p>
           </div>
           <div className="solution-image">
@@ -182,7 +182,7 @@ export const AboutUs = () => {
       <section className="magic-section">
         <div className="magic-container">
           <div className="magic-content">
-            <img src="/images/spark.png" alt="sparkle" className="sparkle-icon-magic" />
+            {/* <img src="/images/spark.png" alt="sparkle" className="sparkle-icon-magic" /> */}
             <h2 className="magic-title">The Magic</h2>
             <div className="magic-points">
               <div className="point">

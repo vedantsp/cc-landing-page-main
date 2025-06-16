@@ -6,6 +6,12 @@
   font-style: normal;
 }
 @font-face {
+  font-family: 'BasierCircle-SemiBold';
+  src: url('../../../public/images/Basier-Circle-SemiBold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'PlayfairDisplay-Italic';
   src: url('../../../public/images/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('opentype');
   font-weight: normal;
@@ -15,8 +21,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-    font-family: 'BasierCircle-Regular', sans-serif;
+    font-family: 'BasierCircle-Regular',;
   }
   
   html {
@@ -110,7 +115,7 @@
   }
 
   .main_des h1 {
-    font-family: 'BasierCircle-Regular';
+    font-family: 'BasierCircle-SemiBold';
     font-size: 3.1rem;
     color: white;
     margin-bottom: 0.3rem;  /* Reduced from default (was likely 1rem+) */
@@ -118,6 +123,7 @@
     font-weight:bolder;
     font-weight: 900;
     margin-top: 6rem;
+    word-spacing: -0.2rem;
   }
 
   .main_des p {
@@ -127,7 +133,7 @@
     margin-bottom: 4rem;
     margin-top: 0;           /* Remove any top margin */
     line-height: 1.3;        /* Optional: adjust for desired look */
-    word-spacing: 0.7rem;
+    word-spacing: 0.2rem;
   }
 
   
@@ -312,14 +318,14 @@
     transform: translate(-50%, -50%);
     color: white;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     text-transform: lowercase;
     transition: font-size 0.3s ease-in-out;
   }
   .circle.small {
-    width: 150px;
-    height: 150px;
+    width: 220px;
+    height: 220px;
     z-index: 1;
   }
   .circle.large {
@@ -335,7 +341,7 @@
   z-index: 3;
 }
 .category-circles .circle span:hover{
-  font-size: 1.4rem;
+  font-size: 2.4rem;
 }
   
   /* Tags */
@@ -551,7 +557,7 @@
 
 .avatar p {
   margin-top: 0.5rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
   background: white;
   padding: 0.3rem 0.8rem;
   border-radius: 20px;
@@ -589,14 +595,14 @@
   }
   .signup-box-home h2 {
     color: white;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1rem;
-    font-family: 'BasierCircle-Regular', sans-serif;
+    font-family: 'BasierCircle-SemiBold';
     
   }
   .signup-box-home p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 2rem;
     font-family: 'BasierCircle-Regular', sans-serif;
   }
@@ -640,14 +646,14 @@
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
     color: #ffffff;
-    font-family: 'BasierCircle-Regular', sans-serif;
+    font-family: 'BasierCircle-SemiBold';
   }
   
   .definition h3 span {
     font-size: 1.5rem;
     font-style: italic;
     color: white;
-    font-family: 'BasierCircle-Regular', sans-serif;
+    font-family: 'BasierCircle-SemiBold';
     font-weight: bold;
   }
   
@@ -953,13 +959,13 @@
 
   }
   .circle.small {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     z-index: 1;
   }
   .circle.large {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
   }
 
   .category-circles .circle span:hover{
@@ -1083,7 +1089,7 @@
     align-items: center;
     justify-content: center;
     font-weight: 500;
-    font-size: 0.95rem;
+    font-size: 0.8rem;
     gap: 0.6rem;
     transition: background 0.3s;
   }

@@ -20,33 +20,14 @@
   margin-bottom: 2rem;
 }
 
-.footer-tagline {
-  font-size: 2.5rem;
-  font-weight: 400;
-  line-height: 1;
-  font-weight: bold;
-}
-
-.footer-tagline .italic-bold {
-  font-family: 'PlayfairDisplay-Italic';
-  font-weight: bold;
-  font-style: italic;
-  
-}
-.footer-tagline .italic-bold-2 {
-  font-family: 'PlayfairDisplay-Italic';
-  font-weight: bold;
-  font-style: italic;
-  padding-right: 196px;
-  
-}
-
-.footer-tagline .bold {
-  font-weight: bold;
-  padding-left: 50px;
+.footer-tagline-img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .footer-right {
+  margin-top: 7rem;
   flex: 1;
   min-width: 280px;
   display: flex;
@@ -62,168 +43,307 @@
   text-transform: lowercase;
 }
 
+.newsletter-form {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
 .newsletter-input {
-  width: 21rem;
-  padding: 0.6rem 1rem;
+  width: 18rem;       /* set fixed width */
+  height: 2.6rem;       /* reduce height */
+  font-size: 0.9rem;
+  padding: 0.3rem 0.6rem;
   border-radius: 10px;
   border: none;
-  font-size: 0.95rem;
   outline: none;
+  flex: none;         /* prevent stretching */
 }
 
-.loop-label {
-  font-size: 0.8rem;
-  margin-top: 1rem;
+
+.btn-submit {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #36b417;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: lowercase;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  height: 100%;
 }
-  .sparkle-icon {
-    position: absolute;
-    top: -5px;     /* adjust as needed */
-    right: 56.5rem;  /* position to top-right corner */
-    width: 100px;
-    height: 100px;
-    animation: twinkle 1.5s infinite ease-in-out;
-  }
+
+.btn-submit:hover,
+.btn-submit:active {
+  background-color: #686566;
+  color: #fff;
+}
 
 .social-footer {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .social-footer p {
-    font-weight: normal;
-    font-size: 0.85rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    padding-left: 10rem;
-  }
-  
-  .footer-arrow {
-    position: absolute;
-    top: 20px;
-    right: -40px;
-    width: 50px;
-    height: auto;
-    filter: invert(1) brightness(2);
-  }
-  
-  .footer-tags {
-    display: flex;
-    justify-content: center;
-    gap: 0.6rem;
-    margin-top: 0.3rem;
-  }
-  
-  .footer-tags a {
-    background: #ffffff;
-    color: #FF8C6B;
-    padding: 0.4rem 1rem;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 500;
-    text-decoration: none;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: background 0.3s ease;
-  }
-  
-  .footer-tags a:hover {
-    background: #FF8C6B;
-    color: #ffffff;
-  }
-  .copy {
-    margin-top: 6rem;
-    font-size: 1rem;
-    font-weight: bolder;
-    color: #ffffff;
-  }
+  position: relative;
+  display: inline-block;
+}
 
-  @media (max-width: 768px) {
+.social-footer p {
+  font-weight: normal;
+  font-size: 0.95rem;
+  margin: 0.5rem 0;
+  padding-left: 11rem;
+}
+
+.footer-arrow {
+  position: absolute;
+  top: 20px;
+  right: -40px;
+  width: 50px;
+  height: auto;
+  filter: invert(1) brightness(2);
+}
+
+.footer-tags {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-top: 0.3rem;
+}
+
+.footer-tags a {
+  background: #ffffff;
+  color: #FF8C6B;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+
+.footer-tags a:hover {
+  background: #686566;
+  color: #ffffff;
+}
+
+.copy {
+  margin-top: 6rem;
+  font-size: 1rem;
+  font-weight: bolder;
+  color: #ffffff;
+}
+
+/* Responsive - Tablet & Mobile */
+@media (max-width: 768px) {
   .footer-container {
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
   }
 
-  .footer-content {
-    flex-direction: row;
-    flex-wrap: nowrap;
+
+  .footer-left {
+    flex: 1;
+    min-width: 130px;
+  }
+
+  .footer-tagline-img img {
+    width: 12rem;
+    height: auto;
+    display: block;
+  }
+
+  .footer-right {
+    margin-left: -3rem;
+    flex: 1;
+    min-width: 140px;
+    margin-top: 0;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
     align-items: flex-start;
-    justify-content: space-between;
-    gap: 1rem;
   }
 
- 
-
-  .footer-tagline {
+  .newsletter-label {
     font-size: 0.8rem;
-    line-height: 1.2;
+    font-weight: 900;
+    text-transform: lowercase;
   }
 
-  .sparkle-icon {
-    width: 60px;
-    height: 60px;
-    top: -3px;
-    right: 11rem;
+  .newsletter-form {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items: center;
   }
-  .footer-tagline .bold {
-    padding-left:14px;
+
+  .newsletter-input {
+    width: 8rem;
+    height: 2rem;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .btn-submit {
+    height: 2rem;
+    font-size: 0.6rem;
+    padding: 0 0.5rem;
+  }
+
+  /* Stay in loop section should come full width below */
+  .social-footer {
+    width: 100%;
+    margin-top: 1rem;
+    margin-left: -6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .social-footer p {
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding-left: 0;
+    /* margin-bottom: 0.5rem; */
+    margin-left: 8rem;
+  }
+
+  .footer-arrow {
+    width: 2.4rem;
+    margin-right: 1.6rem;
+  }
+
+  .footer-tags {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .footer-tags a {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.8rem;
+  }
+  .email-link{
+    margin-left: -4rem;
+  }
+
+  .copy {
+    margin-top: 3rem;
+    font-size: 0.8rem;
+    text-align: center;
+  }
 }
-.footer-tagline .italic-bold-2 {
-    padding-right: 65px;
-}
+
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 1.5rem 1rem;
+  }
 
 
+  .footer-left {
+    flex: 1;
+    min-width: 130px;
+  }
 
+  .footer-tagline-img img {
+    width: 8rem;
+    height: auto;
+    display: block;
+  }
+
+  .footer-right {
+    margin-left: -3rem;
+    flex: 1;
+    min-width: 140px;
+    margin-top: 0;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: flex-start;
+  }
 
   .newsletter-label {
     font-size: 0.6rem;
+    font-weight: 900;
+    text-transform: lowercase;
+    margin-left: 0.2rem;
   }
 
-  
-
-  .footer-tags a {
-    font-size: 0.5rem;
-    padding: 0.1rem 0.4rem;
+  .newsletter-form {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items: center;
   }
 
-  .footer-tags-p {
-    font-size: 0.4rem;
+  .newsletter-input {
+    
+     width: 8rem;     /* reduced width */
+  height: 1.5rem;    /* reduced height */
+  font-size: 0.75rem; /* slightly smaller text */
+  padding: 0.3rem 0.5rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  flex: 0;
+  }
+
+  .btn-submit {
+    height: 1.4rem;
+    font-size: 0.6rem;
+    padding: 0 0.5rem;
+  }
+
+  /* Stay in loop section should come full width below */
+  .social-footer {
+    width: 100%;
+    margin-top: 1rem;
+    margin-left: -6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .social-footer p {
+    font-weight: bold;
+    font-size: 0.6rem;
     padding-left: 0;
-  }
-  .social-footer p{
-    font-size: 0.4rem;
-     padding-left: 105px;
+    /* margin-bottom: 0.5rem; */
+    margin-left: 7rem;
+    margin-right: -5rem;
   }
 
   .footer-arrow {
-    width: 35px;
-    top: 15px;
-    right: -25px;
+    width: 2rem;
+    margin-right: -1.6rem;
+    margin-top: -0.3rem;
   }
 
-  .email-link {
+  .footer-tags {
+    justify-content: center;
+    flex-wrap:nowrap;
+    gap: 0.5rem;
+    margin-left: 4rem;
+  }
+
+  .footer-tags a {
     font-size: 0.6rem;
+    padding: 0.3rem 0.8rem;
+  }
+  .email-link{
+    margin-left: -3rem;
+    font-size: 0.8rem;
   }
 
   .copy {
-    font-size: 0.6rem;
     margin-top: 3rem;
+    font-size: 0.8rem;
+    text-align: center;
   }
-}
-
-.subscribe-button .btn-submit {
-  width: 8rem;
-  padding: 14px;
-  margin-top: 8px;
-
-  border: none;
-  border-radius: 8px;
-  background: linear-gradient(90deg, #58ce7c 0%, #1db84c 100%);
-  color: #fff;
-  text-transform: uppercase;
-  cursor: pointer;
-  
-}
-
-
-
-.subscribe-button .btn-submit:hover {
- opacity:0.9;
 }
