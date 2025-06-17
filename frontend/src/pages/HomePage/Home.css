@@ -28,8 +28,6 @@
     margin: 0;
     padding: 0;
   }
-  
-
 .h-body{
     margin: 0;
   padding: 0;
@@ -143,6 +141,15 @@
     font-weight: bold;
 
   }
+
+  .intro-heading-img {
+  max-width: 1000px;
+  width: 100%;
+  display: block;
+  margin: 2rem auto;
+  margin-top: -8rem;
+  margin-bottom: -6rem;
+}
   
   .hero-heading-wrapper {
     position: relative;
@@ -298,6 +305,7 @@
     margin-top: 30px;
     gap: 1.2rem;
     font-size: 1.5rem;
+    margin-bottom: 6rem;
   }
   .circle {
     border-radius: 50%;
@@ -307,7 +315,7 @@
     align-items: flex-end;
     justify-content: center;
     position: relative;
-    box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+    /* box-shadow: 0 5px 12px rgba(0,0,0,0.2); */
     font-size: 1.5rem;
     transition: transform 0.3s ease, z-index 0.3s ease;
   }
@@ -327,12 +335,14 @@
     width: 220px;
     height: 220px;
     z-index: 1;
+    border: 2px solid white;
   }
   .circle.large {
     width: 220px;
     height: 220px;
     z-index: 2;
     margin: 0 -40px;
+    border: 2px solid white;
   }
 
   .category-circles .circle:hover {
@@ -556,12 +566,13 @@
 }
 
 .avatar p {
+  font-family: 'BasierCircle-SemiBold';
   margin-top: 0.5rem;
   font-size: 1.1rem;
   background: white;
   padding: 0.3rem 0.8rem;
   border-radius: 20px;
-  font-weight: bold;
+  /* font-weight: bold; */
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 .last-avatar {
@@ -637,7 +648,7 @@
     text-align: left;
     padding: 5rem 1rem;
     color: white;
-    max-width: 800px;
+    max-width: 890px;
     margin: 0 auto;
     border-radius: 20px;
   }
@@ -773,6 +784,15 @@
     word-spacing: 0.1rem;
   }
 
+  .intro-heading-img {
+  max-width: 1000px;
+  width: 100%;
+  display: block;
+  margin: 2rem auto;
+  margin-top: -2rem;
+  margin-bottom: -2rem;
+}
+
   .grid-gallery {
   gap: 15px;
   padding: 5px 0px;
@@ -884,12 +904,12 @@
   }
   
   .definition h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: -0.8rem;
   }
   
   .definition h3 span {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 
   }
   
@@ -900,11 +920,11 @@
   
   .definition .definition-text {
     margin-top: 0.5rem;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   
   .definition .example {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .category-wrapper{

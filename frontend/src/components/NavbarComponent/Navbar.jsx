@@ -1,37 +1,51 @@
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
-export const Navbar = () => {
+export const Navbar = ({ page }) => {
   return (
-    <nav className="nav-bar">
-      <ul className="nav-left">
-        <li>
-          <NavLink to="/aboutUs">
-            <button>About</button>
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/partner">
-            {" "}
-            <button>Become a Partner</button>
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/invest">
-            {" "}
-            <button>Invest</button>
-          </NavLink>
-        </li>
-      </ul>
+    <>
+     
+        <nav className="nav-bar">
+          <ul className="nav-left">
+            <li>
+              <NavLink 
+                to="/" 
+                className={page === 'AboutUs' || page === 'Partner' || page === 'Invest' ? "active-link" : ""}
+              >
+                <button>Home</button>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink 
+                to="/aboutUs" 
+                className={page === 'AboutUs' || page === 'Partner' || page === 'Invest'? "active-link" : ""}
+              >
+                <button>About</button>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink 
+                to="/partner" 
+                className={page === 'AboutUs'|| page === 'Partner' || page === 'Invest' ? "active-link" : ""}
+              >
+                <button>Become a Partner</button>
+              </NavLink>
+            </li>
+          </ul>
 
-      <ul className="nav-right">
-        <li>
-          <NavLink to="/contactUs">
-            {" "}
-            <button>Contact</button>
-          </NavLink>
-        </li>
-      </ul>
-    </nav>
+          <ul className="nav-right">
+            <li>
+              <NavLink 
+                to="/invest" 
+                className={page === 'AboutUs'|| page === 'Partner' || page === 'Invest' ? "active-link" : ""}
+              >
+                <button>Invest</button>
+              </NavLink>
+            </li>
+          </ul>
+        </nav>
+     
+
+    </>
   );
 };

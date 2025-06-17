@@ -26,7 +26,9 @@
   text-transform: lowercase;
   cursor: pointer;
 }
-
+.active-link button {
+  color: green; /* Change text color to green */
+}
 @media (max-width: 768px) {
   .nav-bar {
     margin: 0.5rem 1rem;

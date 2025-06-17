@@ -14,7 +14,7 @@ export const AboutUs = () => {
     <section className="cleanclick-container">
       {/* Header */}
       <section className="top-g">
-      <Navbar/>
+      <Navbar page = {'AboutUs'}/>
       <Header/>
       </section>
 
@@ -47,7 +47,11 @@ export const AboutUs = () => {
 
           {/* Pick Your Fighter Section */}
           <div className="fighter-section">
-            <h2 className="fighter-title">pick your fighter</h2>
+            <img
+  src="/images/pick-your-fighter.png"
+  alt="Pick your fighter"
+  className="fighter-title-img"
+/>
             <div className="fighters-container">
               {/* Explorer */}
               <div className="fighter explorer-fighter">
@@ -111,9 +115,9 @@ export const AboutUs = () => {
           </div>
 
           <div className="we-com">
-          <div className="we-com-tagline-img">
+          {/* <div className="we-com-tagline-img">
   <img src="/images/footer-image.png" alt="AI-powered clean living tagline" />
-</div>
+</div> */}
         </div>
         </div>
       </section>
@@ -125,7 +129,12 @@ export const AboutUs = () => {
             <img src="/images/5.png" alt="Person with natural skincare" />
           </div>
           <div className="opportunity-content">
-            <h2>The Opportunity</h2>
+            <img
+  src="/images/the-opportunity.png"
+  alt="The Opportunity"
+  className="opportunity-title-img"
+/>
+<div className="opportunity-para">
                 <h3>Consumers are hungry for change.</h3>
                 <p>
                   The growing wave of environmentally and socially conscious
@@ -143,6 +152,7 @@ export const AboutUs = () => {
                   noise—CleanClick cuts through the clutter with clarity and
                   community.
                 </p>
+                </div>
           </div>
         </div>
       </section>
@@ -151,7 +161,12 @@ export const AboutUs = () => {
       <section className="solution-section">
         <div className="solution-container">
           <div className="solution-content">
-            <h2>Our Solution</h2>
+            <img
+  src="/images/our-solution.png"
+  alt="Our Solution"
+  className="section-heading"
+/>
+<div className="section-para">
                 <h3>Curated discovery</h3>
                 <p>
                   Find vetted, clean-living brands tailored to your lifestyle
@@ -171,6 +186,7 @@ export const AboutUs = () => {
                   Buy better products from brands with purpose—all in one
                   intuitive environment
                 </p>
+                </div>
           </div>
           <div className="solution-image">
             <img src="/images/6.png" alt="Clean living products" />
@@ -183,7 +199,11 @@ export const AboutUs = () => {
         <div className="magic-container">
           <div className="magic-content">
             {/* <img src="/images/spark.png" alt="sparkle" className="sparkle-icon-magic" /> */}
-            <h2 className="magic-title">The Magic</h2>
+            <img
+  src="/images/the-magic.png"
+  alt="The Magic"
+  className="magic-title-img"
+/>
             <div className="magic-points">
               <div className="point">
                 <span className="point-title">AI-powered recommendations

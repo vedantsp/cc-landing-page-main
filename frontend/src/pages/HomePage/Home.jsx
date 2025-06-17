@@ -10,16 +10,21 @@ const API_URL = process.env.REACT_APP_BACKEND_URL;
 
 
 const avatars = [
-  { img: "/images/@matchaqueen.png", alt: "@matchaqueen" },
-  { img: "/images/@bradley2000.png", alt: "@bradley2000" },
-  { img: "/images/@eatplaysleep.png", alt: "@eatplaysleep" },
-  { img: "/images/@conscious_cass.png", alt: "@conscious_cass" },
+  { img: "/images/@amandamoneysmith.png", alt: "@amandamoneysmith" },
   { img: "/images/@earthymamma.png", alt: "@earthymamma" },
-  { img: "/images/@flowerchild95.png", alt: "@flowerchild95" },
-  { img: "/images/@dogmom.png", alt: "@dogmom" },
-  { img: "/images/@hannahbanana.png", alt: "@hannahbanana" },
-  { img: "/images/@liveslowdieold.png", alt: "@liveslowdieold" },
-  { img: "/images/@marykate96.png", alt: "@marykate96" },
+  { img: "/images/@emmaj0an.png", alt: "@emmaj0an" },
+  { img: "/images/@howmuchisaveggieburger.png", alt: "@howmuchisaveggieburger" },
+  { img: "/images/@ivet.pilatesplaysleep.png", alt: "@ivet.pilatesplaysleep" },
+  { img: "/images/@jessvincii.png", alt: "@jessvincii" },
+  { img: "/images/@katiecooksgreen.png", alt: "@katiecooksgreen" },
+  { img: "/images/@lovelaura.png", alt: "@lovelaura" },
+  { img: "/images/@maddie.in.nature.png", alt: "@maddie.in.nature" },
+  { img: "/images/@madebymeagan.png", alt: "@madebymeagan" },
+  { img: "/images/@ourcleanlife.png", alt: "@ourcleanlife" },
+  { img: "/images/@sarahmoussavi.png", alt: "@sarahmoussavi" },
+  { img: "/images/@slowfashionsindo.png", alt: "@slowfashionsindo" },
+  { img: "/images/@styledbygita.png", alt: "@styledbygita" },
+  { img: "/images/@zarahsworld.png", alt: "@zarahsworld" },
 ];
 
 export const Home = () => {
@@ -51,10 +56,12 @@ export const Home = () => {
         <Header/>
 
 
-        <h1>clean living starts here</h1>
-        <p>
-          The platform for <em>clean</em> fashion, beauty, and wellness.
-        </p>
+        <img
+  src="/images/home-main-text.png"
+  alt="clean living starts here - The platform for clean fashion, beauty, and wellness"
+  className="intro-heading-img"
+/>
+
       </section>
 
       <section className="grid-gallery">
@@ -153,7 +160,7 @@ export const Home = () => {
         </div>
       </div>
 
-      <div className="tags">
+      {/* <div className="tags">
         <span>DIY lip balm</span>
         <span>thrifting hacks</span>
         <span>how to make matcha</span>
@@ -161,7 +168,7 @@ export const Home = () => {
         <span>managing PCOS</span>
         <span>how does fashion rental work?</span>
         <span>breathwork techniques</span>
-      </div>
+      </div> */}
 
       {/* <div className="search-wrapper">
         <div className="search-bar">

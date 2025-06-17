@@ -63,13 +63,19 @@ const Partner = () => {
   return (
     <>
     <section className="partner-body">
-      <Navbar/>
+      <Navbar page={'Partner'}/>
       <Header/>
       <section className="partner-form">
         <div className="partner-bubble">
-  <h3>Partner with us</h3>
+  <img
+  src="/images/partner-with-us.png"
+  alt="Partner with us"
+  className="partner-heading"
+/>
+<div className="partner-body-par">
   <p>Showcase your brand to our conscious, curious community.</p>
-  <p>Become an affiliate partner on CleanClick.</p>
+  <p>Become an affiliate partner on CleanClick and showcase your brand to our community.</p>
+  </div>
 </div>
 
         <form className="partner-contact" onSubmit={handleSubmit}>
@@ -121,7 +127,7 @@ const Partner = () => {
           />
           <button type="submit">Submit</button>
         </form>
-        <h3>Clean clicks. Real impact. Together.</h3>
+        {/* <h3>Clean clicks. Real impact. Together.</h3> */}
       </section>
       </section>
       <Footer/>

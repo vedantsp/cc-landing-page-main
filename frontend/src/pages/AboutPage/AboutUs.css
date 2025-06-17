@@ -55,6 +55,9 @@
   );
 }
 
+/* .nav-bar button{
+  color:#5ab17e;
+} */
 
 /* Hero Section */
 .hero-section {
@@ -121,6 +124,12 @@
   position: relative;
   overflow: hidden;
   z-index: 1;
+}
+.fighter-title-img {
+  width: 100%;
+  max-width: 400px; /* adjust based on your layout */
+  display: block;
+  margin: 0 auto;
 }
 
 .fighter-title {
@@ -269,9 +278,9 @@
 
   background: linear-gradient(90deg, #83cda1, #86e876);
   padding-top: 18rem;
-  padding-bottom: 18rem;
+  padding-bottom: 12rem;
   text-align: center;
-  margin-top: -14rem;
+  margin-top: -19.5rem;
   z-index: 0;
   color: white;
 }
@@ -326,6 +335,15 @@
   display: block;
 }
 
+.opportunity-title-img {
+  width: 100%;
+  max-width: 450px; /* adjust as needed */
+  display: block;
+  margin: 0 auto;
+  filter: invert(1) brightness(2);
+  margin-left: -2rem;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .fighters-container {
@@ -371,7 +389,7 @@
   padding: 4rem 0;
   margin-top: -6rem;
    padding-top: 6rem;
-  padding-bottom: 8rem;
+  padding-bottom: 10rem;
 }
 .opportunity-section h2{
   font-family: 'PlayfairDisplay-Italic';
@@ -412,7 +430,7 @@
   align-items:flex-start;
   justify-content: left;
   margin-left: 170px;
-  margin-top: 55px;
+  margin-top: -4rem;
   z-index: 1;
 }
 .opportunity-content h3{
@@ -421,6 +439,9 @@
 }
 .opportunity-content p{
   font-size: 1.2rem;
+}
+.opportunity-para{
+  margin-top: -4rem;
 }
 
 
@@ -460,6 +481,13 @@
   position: relative;
   margin-top: -15px;
 }
+.section-heading {
+  display: block;
+  width: 450px;
+  height: auto;
+  margin: 0 auto;
+  margin-left: -6rem;
+}
 
 .solution-image {
   position: absolute;
@@ -483,7 +511,7 @@
 }
 
 .solution-content {
-  margin-top: 4rem;
+  margin-top: 0rem;
   align-items:flex-start;
   justify-content: left;
   margin-left: 70px;
@@ -502,6 +530,10 @@
   font-size: 1.2rem;
 }
 
+.section-para{
+  margin-left: -14px;
+  margin-top: -4rem;
+}
 
 
 
@@ -532,6 +564,7 @@
 .magic-content {
   text-align: center;
   color: white;
+  margin-top: -6rem;
 }
 .magic-content h2{
   font-family: 'PlayfairDisplay-Italic';
@@ -552,6 +585,7 @@
   gap: 30px;
   max-width: 800px;
   margin: 0 auto;
+  margin-top: -2rem;
 }
 
 .point {
@@ -562,7 +596,7 @@
 }
 
 .point-title {
-  font-family: 'BasierCircle-SemiBold';
+  /* font-family: 'BasierCircle-SemiBold'; */
   display: inline;
   font-size: 1.4rem;
 }
@@ -572,6 +606,11 @@
   margin-left: 4px;
 }
 
+.magic-title-img {
+  max-width: 450px;
+  display: block;
+  margin: 0 auto;
+}
 /* Responsive design */
 @media (max-width: 768px) {
   html, body {
@@ -769,7 +808,7 @@
   .magic-section {
     margin-left: 1rem;
     margin-right: 1rem;
-    padding-top: 4rem;
+    padding-top: 5.5rem;
     padding-bottom: 4rem;
     border-radius: 30px;
   }
@@ -810,5 +849,22 @@
 .hero-subtitle {
   margin-top: -5rem;
   font-size: 0.8rem;
+}
+.opportunity-title-img {
+  margin-left: -1.4rem;
+}
+
+.section-heading {
+  width: 320px;
+  height: auto;
+  margin: 0 auto;
+  margin-left: -2rem;
+  margin-top: -8rem;
+  margin-bottom: 0px;
+}
+.magic-title-img {
+  max-width: 350px;
+  display: block;
+  margin: 0 auto;
 }
 }

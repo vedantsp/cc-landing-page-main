@@ -11,10 +11,14 @@ const Invest = () => {
   return (
     <>
       <section className="invest-form-body">
-        <Navbar/>
+        <Navbar page = {'Invest'}/>
         <Header/>
         <div className="invest-section">
-  <h3>Invest in us</h3>
+  <img 
+  src="/images/invest-in-us.png" 
+  alt="Invest in us" 
+  className="invest-heading-img" 
+/>
   <p>
     CleanClick is where impact meets opportunity—<br />
     the intersection of tech, community, and conscious commerce.

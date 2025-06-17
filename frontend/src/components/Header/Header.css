@@ -39,7 +39,7 @@
   .btn-logout { background-color: #f44d75; color: rgb(255, 255, 255);
   height:32px;
   width: 80px; 
-  border-color: #f44d75;
+  /* border-color: #f44d75; */
   border-radius:20px;
   }
   .btn-logout:hover{

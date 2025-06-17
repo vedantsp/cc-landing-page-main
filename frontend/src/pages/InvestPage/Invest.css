@@ -4,6 +4,10 @@
   font-weight: normal;
   font-style: normal;
 }
+
+/* .nav-bar button{
+  color:#5ab17e;
+} */
 .invest-form-body{
     margin: 0;
   padding-top: 3rem;
@@ -91,12 +95,20 @@
   border-radius: 10px;
 }
 
-.invest-section h3 {
+/* .invest-section h3 {
   font-family: 'PlayfairDisplay-Italic';
   font-style: italic;
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
   color: #111;
+} */
+
+.invest-heading-img {
+  width: 100%;
+  max-width: 400px; 
+  display: block;
+  margin: 0 auto;
+  margin-top: -7rem;
 }
 
 .invest-section p {
