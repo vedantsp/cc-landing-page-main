@@ -16,3 +16,54 @@
     border: none;
     cursor:pointer;
 }
+.register-modal h2{
+  color: white;
+  margin-bottom: 5px;
+  font-weight: 600;
+  text-align: center;  /* Center the label */
+  width: 100%;
+}
+
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .password-container input {
+    padding-right: 30px;  /* Space for the eye icon */
+  }
+  
+  .eye-icon {
+    position: absolute;
+    bottom: 27px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Align labels in the center */
+.input-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  width: 100%;
+  text-align: center;  /* Center the label text */
+}
+
+.input-field label {
+  color: white;
+  margin-bottom: 5px;
+  font-weight: 600;
+  text-align: center;  /* Center the label */
+  width: 100%;
+}
+
+/* .input-field input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+} */

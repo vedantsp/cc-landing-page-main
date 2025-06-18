@@ -60,7 +60,7 @@ export const Register = ({ onSuccess, onCancel }) => {
       <h2>Create an Account</h2>
       <br />
       <form onSubmit={handleSubmit}>
-        <div>
+        <div className="input-field">
           <label htmlFor="username">Username</label>
           <input
             name="username"
@@ -70,7 +70,7 @@ export const Register = ({ onSuccess, onCancel }) => {
             required
           />
         </div>
-        <div>
+        <div className="input-field" >
           <label htmlFor="email">Email</label>
           <input
             name="email"
@@ -80,7 +80,7 @@ export const Register = ({ onSuccess, onCancel }) => {
             required
           />
         </div>
-        <div>
+        <div className="input-field">
           <label htmlFor="password">Password</label>
           <div className="password-container">
             <input
