@@ -1,0 +1,18 @@
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .password-container input {
+    padding-right: 30px;  /* Space for the eye icon */
+  }
+  
+  .eye-icon {
+    position: absolute;
+    bottom: 27px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor:pointer;
+}

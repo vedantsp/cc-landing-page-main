@@ -16,7 +16,7 @@ const animatedMessages = [
 - Atika – Brick Lane
 - Rellik – Notting Hill
 - Beyond Retro – Dalston & Soho
-- Nordic Poetry – Hackney
+- Nordic Poetry - Shoreditch
 - Retromania – Victoria
 - Goldsmith Vintage – Soho, Camden, Greenwich
 - One of a Kind Archive – Portobello Road

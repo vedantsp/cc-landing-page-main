@@ -8,6 +8,8 @@ export const Login = ({ onSuccess, onCancel }) => {
   const [credentials, setCredentials] = useState({ email: "", password: "" });
   const { storeTokenInLS } = useAuth();
 
+ 
+
   const handleChange = (e) => {
     setCredentials({ ...credentials, [e.target.name]: e.target.value });
   };
@@ -36,6 +38,12 @@ export const Login = ({ onSuccess, onCancel }) => {
       toast.error("An unexpected error occurred");
     }
   };
+
+
+  const handleGoogleSignIn = () => {
+    window.location.href = `${API_URL}/auth/google`;
+  };
+
 
   return (
     <div className="login-modal">
@@ -67,7 +75,12 @@ export const Login = ({ onSuccess, onCancel }) => {
             Log In
           </button>
         </div>
+       
       </form>
+      <br />
+        <button onClick={handleGoogleSignIn} className="signup-btn google">
+          <i className="fab fa-google"></i> Log In with Google
+        </button>
     </div>
   );
 }

@@ -346,4 +346,7 @@
     font-size: 0.8rem;
     text-align: center;
   }
+  .newsletter-form span{
+    font-size: 0.4rem;
+  }
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useState} from "react";
 import "./Home.css";
 import { useAuth } from "../../store/auth";
 import { toast } from "react-toastify";
@@ -6,6 +6,8 @@ import Header from "../../components/Header/Header";
 import { Navbar } from "../../components/NavbarComponent/Navbar";
 import Footer from "../../components/Footer/Footer";
 import AnimatedChatBot from "../../components/Animationchat/AnimationChatBot";
+import { Modal } from "../../components/Modal/Modal";
+import { Register } from "../RegisterPage/Register";
 const API_URL = process.env.REACT_APP_BACKEND_URL;
 
 
@@ -30,7 +32,7 @@ const avatars = [
 export const Home = () => {
  
   const { isLoggedIn } = useAuth();
-
+  const [showRegister, setShowRegister] = useState(false);
 
   const handleSubmit = async (e) => {
     if(isLoggedIn){
@@ -77,12 +79,12 @@ export const Home = () => {
       <div className="card">
   <video
     className="card-video"
-    src="/videos/homepage.mp4"
+    src="/videos/h-m.mp4"
     autoPlay
     muted
     loop
     playsInline
-    poster="/images/img12.jpg"
+    // poster="/images/img12.jpg"
   ></video>
 </div>
 
@@ -113,11 +115,11 @@ export const Home = () => {
           <strong>adjective</strong>
         </p>
         <p className="definition-text">
-          A new standard for conscious living. Refers to products and practices that are responsibly created, health-conscious, high-quality, cruelty-free, and designed with circularity and/or low waste in mind.
+          A new standard for living. Products and practices responsibly made — health-conscious, high-quality, natural, cruelty-free, and/or designed with circularity and low waste in mind.
         </p>
         <p className="example">
           <em>
-            You can tell she uses clean skincare products, her skin is glowing!
+            You can tell she uses clean skincare — her skin is glowing!
           </em>
         </p>
       </section>
@@ -270,24 +272,45 @@ export const Home = () => {
 
 
       <section className="signup-box-home">
-        <h2>create a profile</h2>
-        <p>
-          The first 1000 sign-ups receive free perks and benefits for life -
-          including product discounts, exclusive content, first access to
-          events, and more.
-        </p>
-        <button onClick={handleSubmit} className="signup-btn google">
-          <i className="fab fa-google"></i> Sign in with Google
-        </button>
-        <button className="signup-btn facebook">
-          <i className="fa fa-envelope"></i> Sign in with Mail
-        </button>
-                {/* <button className="signup-btn apple">
+          {isLoggedIn ? (
+            <h2>Congratulations! Your profile has been created.</h2>
+          ) : (
+            <h2>create a profile</h2>
+          )}
+          <p>
+            The first 1000 sign-ups receive free perks and benefits for life -
+            including product discounts, exclusive content, first access to
+            events, and more.
+          </p>
+
+          {!isLoggedIn && (
+            <>
+              <button
+                className="signup-btn facebook"
+                onClick={() => setShowRegister(true)}
+              >
+                <i className="fa fa-envelope"></i> Sign Up with Mail
+              </button>
+              <button onClick={handleSubmit} className="signup-btn google">
+                <i className="fab fa-google"></i> Sign Up with Google
+              </button>
+            </>
+          )}
+
+          {/* <button className="signup-btn apple">
           <i className="fab fa-apple"></i> Sign in with Apple
         </button> */}
-      </section>
+        </section>
       <Footer/>
       </section>
+      {showRegister && (
+              <Modal onClose={() => setShowRegister(false)}>
+                <Register
+                  onSuccess={() => setShowRegister(false)}
+                  onCancel={() => setShowRegister(false)}
+                />
+              </Modal>
+            )}
     </>
   );
 };

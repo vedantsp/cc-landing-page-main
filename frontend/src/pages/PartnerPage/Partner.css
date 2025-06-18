@@ -52,6 +52,7 @@
   margin: 0;
   line-height: 1.5;
   font-weight: bold;
+  padding-bottom: 3rem;
 }
 .partner-body-par{
   margin-top: -2rem;
@@ -66,7 +67,7 @@
     flex-direction: column;
     gap: 0.8rem;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
   .partner-contact ::placeholder{
     /* color: rgb(0, 0, 0); */
@@ -141,6 +142,7 @@
 
   .partner-contact {
     padding: 1.5rem;
+    margin-top: 1rem;
   }
   .partner-body-par{
     margin-top: -10px;

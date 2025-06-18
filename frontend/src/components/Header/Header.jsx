@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import { useAuth } from "../../store/auth";
 import {Modal} from "../Modal/Modal";
 import {Login} from "../../pages/Login"
-import {Register} from "../../pages/Register";
+import {Register} from "../../pages/RegisterPage/Register";
 import "./Header.css";
 
 const Header = () => {

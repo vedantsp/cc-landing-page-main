@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'BasierCircle-Regular';
+  src: url('../../../public/images/BasierCircle-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BasierCircle-SemiBold';
+  src: url('../../../public/images/Basier-Circle-SemiBold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PlayfairDisplay-Italic';
+  src: url('../../../public/images/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 .rounded-header {
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 70px;
@@ -33,6 +51,7 @@
     font-weight: bold;
     cursor: pointer;
     font-size: 1rem;
+    
   }
   .btn-login { background-color: #ff7b7b; color: white; }
   .btn-create_a_profile  { background-color: #62c384; color: white; }

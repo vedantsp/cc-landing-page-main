@@ -73,7 +73,6 @@ const Partner = () => {
   className="partner-heading"
 />
 <div className="partner-body-par">
-  <p>Showcase your brand to our conscious, curious community.</p>
   <p>Become an affiliate partner on CleanClick and showcase your brand to our community.</p>
   </div>
 </div>
