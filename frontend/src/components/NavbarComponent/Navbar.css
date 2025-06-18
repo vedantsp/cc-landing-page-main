@@ -25,7 +25,7 @@
   font-weight: bold;
   text-transform: lowercase;
   cursor: pointer;
-  font-family: 'BasierCircle-SemiBold';
+  /* font-family: 'BasierCircle-SemiBold'; */
 }
 .active-link button {
   color: green; /* Change text color to green */

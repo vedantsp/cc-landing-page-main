@@ -106,7 +106,7 @@ export const Register = ({ onSuccess, onCancel }) => {
         </div>
         <div className="modal-buttons">
           <button type="submit" className="btn-submit">
-            Register
+            sign up
           </button>
         </div>
       </form>

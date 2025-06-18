@@ -65,7 +65,7 @@ const Partner = () => {
     <section className="partner-body">
       <Navbar page={'Partner'}/>
       <Header/>
-      <section className="partner-form">
+      
         <div className="partner-bubble">
   <img
   src="/images/partner-with-us.png"
@@ -76,6 +76,7 @@ const Partner = () => {
   <p>Become an affiliate partner on CleanClick and showcase your brand to our community.</p>
   </div>
 </div>
+<section className="partner-form">
 
         <form className="partner-contact" onSubmit={handleSubmit}>
           <input

@@ -12,19 +12,19 @@ const API_URL = process.env.REACT_APP_BACKEND_URL;
 
 
 const avatars = [
-  { img: "/images/@amandamoneysmith.png", alt: "@amandamoneysmith" },
+  { img: "/images/@amandamoneysmith.png", alt: "@amandamoney" },
   { img: "/images/@earthymamma.png", alt: "@earthymamma" },
   { img: "/images/@emmaj0an.png", alt: "@emmaj0an" },
-  { img: "/images/@howmuchisaveggieburger.png", alt: "@howmuchisaveggieburger" },
-  { img: "/images/@ivet.pilatesplaysleep.png", alt: "@ivet.pilatesplaysleep" },
+  { img: "/images/@howmuchisaveggieburger.png", alt: "@veggieburgerplz" },
+  { img: "/images/@ivet.pilatesplaysleep.png", alt: "@ivetalexander" },
   { img: "/images/@jessvincii.png", alt: "@jessvincii" },
-  { img: "/images/@katiecooksgreen.png", alt: "@katiecooksgreen" },
+  { img: "/images/@katiecooksgreen.png", alt: "@katiecooks" },
   { img: "/images/@lovelaura.png", alt: "@lovelaura" },
-  { img: "/images/@maddie.in.nature.png", alt: "@maddie.in.nature" },
-  { img: "/images/@madebymeagan.png", alt: "@madebymeagan" },
+  { img: "/images/@maddie.in.nature.png", alt: "@maddie2000" },
+  { img: "/images/@madebymeagan.png", alt: "@bymeagan" },
   { img: "/images/@ourcleanlife.png", alt: "@ourcleanlife" },
   { img: "/images/@sarahmoussavi.png", alt: "@sarahmoussavi" },
-  { img: "/images/@slowfashionsindo.png", alt: "@slowfashionsindo" },
+  { img: "/images/@slowfashionsindo.png", alt: "@sindosunshine" },
   { img: "/images/@styledbygita.png", alt: "@styledbygita" },
   { img: "/images/@zarahsworld.png", alt: "@zarahsworld" },
 ];
@@ -119,13 +119,12 @@ export const Home = () => {
         </p>
         <p className="example">
           <em>
-            You can tell she uses clean skincare — her skin is glowing!
+            She's glowing - clearly the clean skincare products are working their magic.
           </em>
         </p>
-      </section>
-
+      </section> 
       <div className="category-wrapper">
-        <div className="curved-heading">
+        {/* <div className="curved-heading">
           <svg viewBox="0 0 500 150" className="curved-text">
             <path
               id="curvePath"
@@ -134,32 +133,30 @@ export const Home = () => {
             />
             <text>
               <textPath href="#curvePath" startOffset="50%" textAnchor="middle">
-                where to first?
+                discover
               </textPath>
             </text>
           </svg>
-        </div>
+        </div> */}
 
-        <div className="category-circles">
+        {/* <div className="category-circles">
           <div
             className="circle small"
-            style={{ backgroundImage: "url('/images/img12.jpg')" }}
+            style={{ backgroundImage: "url('/images/fashion.png')" }}
           >
-            <span>fashion</span>
           </div>
           <div
             className="circle large"
-            style={{ backgroundImage: "url('/images/img2.png')" }}
+            style={{ backgroundImage: "url('/images/beauty.png')" }}
           >
-            <span>beauty</span>
+
           </div>
           <div
             className="circle small"
-            style={{ backgroundImage: "url('/images/wellness.jpg')" }}
+            style={{ backgroundImage: "url('/images/wellness.png')" }}
           >
-            <span>wellness</span>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* <div className="tags">

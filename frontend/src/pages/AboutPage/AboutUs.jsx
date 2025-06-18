@@ -135,18 +135,18 @@ export const AboutUs = () => {
   className="opportunity-title-img"
 />
 <div className="opportunity-para">
-                <h3>Consumers are hungry for change.</h3>
+                <h3>Consumers are hungry for change</h3>
                 <p>
                   The growing wave of environmentally and socially conscious
                   shoppers want products that align with their values.
                 </p>
-                <h3>Brands are missing the connection.</h3>
+                <h3>Brands are missing the connection</h3>
                 <p>
                   Many purpose-driven brands struggle to reach their audience
                   effectively—especially those seeking content, impact-focused
                   channels.
                 </p>
-                <h3>Content overload is real.</h3>
+                <h3>Content overload is real</h3>
                 <p>
                   People crave clean-living guidance but are overwhelmed by
                   noise—CleanClick cuts through the clutter with clarity and
@@ -169,22 +169,22 @@ export const AboutUs = () => {
 <div className="section-para">
                 <h3>Curated discovery</h3>
                 <p>
-                  Find vetted, clean-living brands tailored to your lifestyle
+                  Find vetted, clean-living brands tailored to your lifestyle.
                 </p>
                 <h3>Engaging content</h3>
                 <p>
                   Scroll without the "brainrot"—quality videos, guides, and
-                  stories that inform and delight
+                  stories that inform and inspire.
                 </p>
                 <h3>Social connection</h3>
                 <p>
                   Connect with like-minded people, share tips, and amplify
-                  authentic voices
+                  authentic voices.
                 </p>
                 <h3>Seamless shopping</h3>
                 <p>
                   Buy better products from brands with purpose—all in one
-                  intuitive environment
+                  intuitive environment.
                 </p>
                 </div>
           </div>

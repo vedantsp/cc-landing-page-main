@@ -36,7 +36,8 @@
    background: linear-gradient(
     to bottom,
     #ff815a 0%,
-    #ffffff 90%   
+    #ff815a 20%,
+    #ffffff 65%   
   );
 }
 
@@ -195,6 +196,7 @@
   justify-content: center;
   gap: 15px;
   padding: 20px 150px;
+  margin-top: -2rem;
 }
 
 .card {
@@ -286,6 +288,8 @@
     width: 500px;
     height: 230px;
     font-size: 1.5rem;
+    margin-left: -30rem;
+     transform: rotate(-40deg);
     
   }
   
@@ -443,12 +447,13 @@
   } */
 
   .chat-ui-box {
-  max-width: 650px;
+  max-width: 950px;
   margin: 2rem auto;
   padding: 1.5rem;
   background: white;
-  border-radius: 20px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+  /* box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); */
+   border: 1px solid #000000;
   font-family: sans-serif;
 }
 
@@ -527,6 +532,8 @@
   margin-top: 100px;
   overflow: hidden;
   padding: 2rem 0;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
 }
 
 .carousel-track {
@@ -573,7 +580,8 @@
   padding: 0.3rem 0.8rem;
   border-radius: 20px;
   /* font-weight: bold; */
-  /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); */
+  /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); */
+   border: 1px solid black;
 }
 .last-avatar {
   margin-right: 2rem; /* Matches your gap */
@@ -594,19 +602,21 @@
     background: linear-gradient(to right, #ff815a, #fac3b2);
     padding: 3rem 2rem;
     text-align: center;
-    max-width: 750px;
+    max-width: 900px;
     margin: 9rem auto;
-    border-radius: 30px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+    /* box-shadow: 0 10px 25px rgba(0.4, 0.4, 0.4, 0.4); */
     color: white;
     font-family: 'BasierCircle-Regular', sans-serif;
-    
-    margin-bottom: 100px;
+     /* border: 1px solid #000000; */
+
+    margin-bottom: 160px;
+    margin-top: 5rem;
     
   }
   .signup-box-home h2 {
     color: white;
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     font-weight: bold;
     margin-bottom: 1rem;
     font-family: 'BasierCircle-SemiBold';
@@ -615,6 +625,7 @@
   .signup-box-home p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
+    padding-left: 2rem;
     font-family: 'BasierCircle-Regular', sans-serif;
   }
   .signup-btn {
@@ -711,13 +722,13 @@
     padding-left: 12rem;
   }
   
-  .footer-arrow {
+  /* .footer-arrow {
     position: absolute;
     top: -15px;
     right: -25px;
     width: 30px;
     height: auto;
-  }
+  } */
   
   .footer-tags {
     display: flex;
@@ -737,7 +748,7 @@
   } */
   
   
-  .footer-tags a {
+  /* .footer-tags a {
     background: #f4978e;
     color: white;
     padding: 0.4rem 1rem;
@@ -751,13 +762,13 @@
   
   .footer-tags a:hover {
     background: #e67c78;
-  }
+  } */
   
-  .copy {
+  /* .copy {
     margin-top: 2rem;
     font-size: 0.75rem;
     color: #333;
-  }
+  } */
   
   @media (max-width: 768px) {
 
@@ -786,11 +797,12 @@
 
   .intro-heading-img {
   max-width: 1000px;
-  width: 100%;
+  width: 120%;
   display: block;
   margin: 2rem auto;
-  margin-top: -2rem;
-  margin-bottom: -2rem;
+  margin-top: -3rem;
+  margin-bottom: -3rem;
+  margin-left: -2rem;
 }
 
   .grid-gallery {
@@ -900,7 +912,7 @@
 
 .definition {
     text-align: left;
-    padding: 5rem 2rem;
+    padding: 3rem 2rem;
   }
   
   .definition h3 {
@@ -956,11 +968,11 @@
     font-weight: bold;
     font-family: 'Inter', sans-serif;
   }
-  
+
   
   /* Categories */
   .category-circles {
-    margin-top: -80px;
+    margin-top: -60px;
     font-size: 1.5rem;
   }
   /* .circle {
@@ -1014,6 +1026,7 @@
     margin: 1rem 2rem;
     padding: 1rem;
     border-radius: 15px;
+    margin-top: -1rem;
   }
 
   .search-bar-ui {
@@ -1072,7 +1085,8 @@
   padding: 0.3rem 0.8rem;
   border-radius: 20px;
   /* font-weight: bold; */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); */
+  border: none;
 }
 .last-avatar {
   margin-right: 0.6rem; /* Matches your gap */

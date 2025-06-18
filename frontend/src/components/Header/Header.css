@@ -33,7 +33,7 @@
 
   .logo {
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: white;
     /* background-color: #a879e3; */
     padding: 0.3rem 1rem;
@@ -48,10 +48,10 @@
     padding: 0.4rem 1rem;
     border: none;
     border-radius: 20px;
-    font-weight: bold;
+    /* font-weight: bold; */
     cursor: pointer;
     font-size: 1rem;
-    font-family: 'BasierCircle-SemiBold';
+    /* font-family: 'BasierCircle-SemiBold'; */
     
   }
   .btn-login { background-color: #ff7b7b; color: white; }

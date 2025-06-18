@@ -41,6 +41,7 @@
   font-size: 1.2rem;
   font-weight: 900;
   text-transform: lowercase;
+  color: white;
 }
 
 .newsletter-form {
@@ -52,8 +53,8 @@
 }
 
 .newsletter-input {
-  width: 18rem;       /* set fixed width */
-  height: 2.6rem;       /* reduce height */
+  width: 22rem;       /* set fixed width */
+  height: 3rem;       /* reduce height */
   font-size: 0.9rem;
   padding: 0.3rem 0.6rem;
   border-radius: 10px;
@@ -61,13 +62,16 @@
   outline: none;
   flex: none;         /* prevent stretching */
 }
+.newsletter-input::placeholder {
+  font-size: 1.2rem; /* or any size you prefer */
+}
 
 
 .btn-submit {
   padding: 0.7rem 1.5rem;
   border: none;
   border-radius: 10px;
-  background-color: #36b417;
+  background-color: #54C683;
   color: #fff;
   font-size: 1rem;
   font-weight: 600;
@@ -97,7 +101,7 @@
 
 .footer-arrow {
   position: absolute;
-  top: 20px;
+  top: 14px;
   right: -40px;
   width: 50px;
   height: auto;
