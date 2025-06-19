@@ -25,7 +25,7 @@ const Invest = () => {
     CleanClick is more than a platform—it’s a movement. We’re rethinking how people shop, discover, and connect with brands that actually care.
   </p> <br />
   <p>
-    If you’re an investor who backs bold ideas with heart, we’re building something you’ll want to be part of.<br />
+    If you’re an investor who backs bold ideas with heart, we’re building something you’ll want to be part of.<br /> <br />
     This is your chance to help shape a future that’s profitable and purposeful.
   </p> <br />
   {/* <p>This is your chance to invest in a future that’s as profitable as it is purposeful.</p> */}
