@@ -419,6 +419,7 @@
 /* Opportunity Section */
 .opportunity-section {
   /* background: #686566; */
+  display: flex;
   color: rgb(0, 0, 0);
   padding: 4rem 0;
   margin-top: -6rem;
@@ -721,11 +722,12 @@
     right: 2rem;
   }
   .opportunity-container {
-  flex-direction: column;
-  height: auto;
-  margin-left: -8rem;
-  margin-top: -2rem;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* ⬅ ensures center alignment */
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
 
   .opportunity-section h2,
   .solution-content h2,
@@ -817,8 +819,7 @@
     margin: 2rem 2rem;
     border-radius: 30px;
     margin-bottom: 100px;
-    margin-top: -3rem;
-    
+    margin-top: 0rem;
   }
   .signup-box-home h2 {
     font-size: 1.4rem;
@@ -839,11 +840,11 @@
   left: 0;
   top: 0;
   height: 12rem;
-  width: 65%;
+  width: 80%;
   border-radius: 1rem;
   margin-bottom: 1rem;
   margin-top: -4rem;
-  margin-left: 8rem;
+  margin-left: 0rem;
 }
 
 .opportunity-image img {
@@ -858,13 +859,17 @@
   margin-top: 1rem;
 }
 .solution-image {
+  display: flex;
+  position:absolute;
+  left:0px;
   height: 12rem;
-  width: 76%;
-  margin-left: 17.8rem;
+  width: 112%;
+  /* margin-left: 17.8rem; */
   background: none; /* Remove unwanted background */
   border-radius: 1rem;
   overflow: hidden;
   margin-top: -8rem;
+  margin-left: -1rem;
 }
 
 .solution-image img {
@@ -875,9 +880,11 @@
   border-radius: 0.5rem;
   object-position: 0% 10%;
 }
-.opportunity-content{
-  margin-top: 4.6rem;
-}
+.opportunity-content {
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 1rem;
+  }
 .opportunity-content h3{
   font-size:0.8rem ;
 }
@@ -885,11 +892,21 @@
   font-size:0.7rem ;
 }
 .solution-content{
+  display: flex;
+  flex-direction: column;
   text-align: center;
   justify-content: center;
   margin-top: 21rem;
-  margin-left: 3.6rem;
-  max-width: 270px;
+  /* margin-left: 3.6rem; */
+  max-width: 300px;
+  margin-top: 0rem;
+  align-items:center;
+  justify-content: center;
+  margin-left: 0rem;
+  z-index: 1;
+  /* padding-top: 4rem; */
+  /* padding-bottom: rem; */
+  margin-top: 14.5rem;
 }
 .solution-content h3{
   font-size:0.8rem ;
@@ -948,18 +965,21 @@
   padding-top: 1.2rem;
 }
 .opportunity-title-img {
-  margin-left: -5rem;
-  margin-top: -5rem;
+  display: block;
+  width: 180px;
+  margin: 0 auto;
+  margin-bottom: 3rem;
 }
 
 .section-heading {
+  display: flex;
   width: 180px;
   height: auto;
   margin: 0 auto;
   /* margin-left: -1rem; */
   margin-top: -14rem;
   margin-bottom: 0px;
-  margin-left: 1rem;
+  /* margin-left: 0rem; */
   justify-content: center;
   text-align: center;
 }
@@ -968,28 +988,27 @@
   display: block;
   margin: 0 auto;
 }
-.opportunity-para{
-  display:block;
-  margin-top: -2rem;
-  margin-left: -8.2rem;
-  max-width: 270px;
-  justify-content: center;
-  text-align: center;
-  padding-top: 1rem;
-}
+.opportunity-para {
+    margin-left: 0 !important;
+    text-align: center;
+    padding: 0 1rem;
+  }
 .solution-section{
   margin-top: -3rem;
 }
 .solution-section {
+  display: flex;
   padding-bottom: 10rem;
-  margin-top: -3rem;
+  margin-top: 4rem;
 }
 .section-para{
-  display: block;
-  max-width: 240px;
+  display: flex;
+  flex-direction: column;
+  max-width: 260px;
   text-align: center;
   justify-content: center;
   padding-top: 1rem;
+  margin-left: 0rem;
   
   /* margin-left: 0px;
   margin-top: -4rem; */
@@ -1006,5 +1025,13 @@
 }
 .fighters-container{
   margin-top: 1rem;
+}
+.solution-container{
+  display: flex;
+  flex-direction: column;
+  padding: 0 0rem;
+  align-items: center;
+  position: relative;
+  /* margin-top: -3rem; */
 }
 }
