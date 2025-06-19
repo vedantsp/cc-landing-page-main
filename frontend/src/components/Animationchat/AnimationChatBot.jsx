@@ -30,18 +30,23 @@ const AnimatedChatBot = () => {
   const [showThinking, setShowThinking] = useState(false);
 
   useEffect(() => {
-    if (currentIndex < animatedMessages.length) {
-      const message = animatedMessages[currentIndex];
+  if (currentIndex < animatedMessages.length) {
+    const message = animatedMessages[currentIndex];
 
-      if (message.type === "user") {
-        setTimeout(() => {
-          setMessages((prevMessages) => [...prevMessages, message]);
-          setCurrentIndex((prev) => prev + 1);
-        }, 1000);
-      } else {
+    if (message.type === "user") {
+      setTimeout(() => {
+        setMessages((prevMessages) => [...prevMessages, message]);
+        setCurrentIndex((prev) => prev + 1);
+      }, 1000);
+    } else {
+      // STEP 1: Delay before showing "thinking"
+      const thinkingTimeout = setTimeout(() => {
         setShowThinking(true);
-        const thinkingDelay = setTimeout(() => {
+
+        // STEP 2: Show "thinking" for a bit before typing starts
+        const typingTimeout = setTimeout(() => {
           setShowThinking(false);
+
           let charIndex = 0;
           const chars = Array.from(message.text);
           setDisplayedText([""]);
@@ -60,6 +65,9 @@ const AnimatedChatBot = () => {
               }
 
               charIndex++;
+              if (chatContainerRef.current) {
+  chatContainerRef.current.scrollTop = chatContainerRef.current.scrollHeight;
+}
               if (charIndex === chars.length) {
                 clearInterval(typingInterval);
                 setMessages((prevMessages) => [...prevMessages, message]);
@@ -67,15 +75,20 @@ const AnimatedChatBot = () => {
                 setTyping(false);
                 setCurrentIndex((prev) => prev + 1);
               }
+
               return newLines;
             });
           }, 15);
-        }, 3000);
+        }, 1200); // delay typing after "thinking..."
 
-        return () => clearTimeout(thinkingDelay);
-      }
+        return () => clearTimeout(typingTimeout);
+      }, 1200); // delay before showing "thinking..."
+
+      return () => clearTimeout(thinkingTimeout);
     }
-  }, [currentIndex]);
+  }
+}, [currentIndex]);
+
 
   const renderBotMessage = (text) => {
     const lines = text.split("\n");

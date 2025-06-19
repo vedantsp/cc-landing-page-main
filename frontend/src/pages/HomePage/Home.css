@@ -1043,6 +1043,9 @@
     padding: 0.5rem 0.8rem;
     border-radius: 30px;
   }
+  .search-bar-ui ::placeholder{
+    font-size: 0.55rem;
+  }
 
   .search-bar-ui input {
     font-size: 0.8rem;
