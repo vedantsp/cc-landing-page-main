@@ -69,7 +69,7 @@ const AnimatedChatBot = () => {
               }
               return newLines;
             });
-          }, 30);
+          }, 15);
         }, 3000);
 
         return () => clearTimeout(thinkingDelay);

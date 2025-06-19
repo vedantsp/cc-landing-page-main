@@ -150,8 +150,19 @@
   .invest-section p,
   .invest-section .invest-email {
     font-size: 0.95rem;
+    margin-bottom: 0rem;
   }
   .invest-content p{
     font-size: 0.9rem;
+     margin-bottom: 0rem;
   }
+  .invest-content p strong {
+  white-space: nowrap;
+}
+.invest-content{
+  margin-top: -1rem;
+}
+.invest-heading-img{
+  width: 200px;
+}
 }

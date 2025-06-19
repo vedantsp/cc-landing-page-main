@@ -275,9 +275,9 @@ export const Home = () => {
             <h2>create a profile</h2>
           )}
           <p>
-            The first 1000 sign-ups receive free perks and benefits for life -
+            The first 1000 sign-ups receive free perks and benefits for life,
             including product discounts, exclusive content, first access to
-            events, and more.
+            events, and more—launching this summer.
           </p>
 
           {!isLoggedIn && (

@@ -64,5 +64,7 @@
   .nav-bar button {
     padding: 0.2rem 0.5rem;
     font-size: 0.7rem;
+    font-family: 'BasierCircle-Regular';
+    font-weight: 100;
   }
 }

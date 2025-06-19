@@ -90,22 +90,19 @@ export const AboutUs = () => {
   className="opportunity-title-img"
 />
 <div className="opportunity-para">
-                <h3>Consumers are hungry for change</h3>
+                <h3>People are hungry for change</h3>
                 <p>
-                  The growing wave of environmentally and socially conscious
+                  The growing wave of health-focused, and environmentally and socially conscious
                   shoppers want products that align with their values.
                 </p>
                 <h3>Brands are missing the connection</h3>
                 <p>
                   Many purpose-driven brands struggle to reach their audience
-                  effectively—especially those seeking content, impact-focused
-                  channels.
+                  effectively—especially on content-focused channels.
                 </p>
                 <h3>Content overload is real</h3>
                 <p>
-                  People crave clean-living guidance but are overwhelmed by
-                  noise—CleanClick cuts through the clutter with clarity and
-                  community.
+                  People crave clean-living guidance but are overwhelmed by the noise and clutter online.
                 </p>
                 </div>
           </div>
@@ -116,7 +113,7 @@ export const AboutUs = () => {
       <section className="solution-section">
         <div className="solution-container">
           <div className="solution-image">
-            <img src="/images/6.png" alt="Clean living products" />
+            <img src="/images/solution-new.jpg" alt="Clean living products" />
           </div>
           <div className="solution-content">
             <img
@@ -127,7 +124,7 @@ export const AboutUs = () => {
 <div className="section-para">
                 <h3>Curated discovery</h3>
                 <p>
-                  Find vetted, clean-living brands tailored to your lifestyle.
+                  Find vetted brands, creators and content tailored to your lifestyle.
                 </p>
                 <h3>Engaging content</h3>
                 <p>
@@ -157,6 +154,8 @@ export const AboutUs = () => {
   alt="Pick your fighter"
   className="fighter-title-img"
 />
+
+<div className="fighter-wrapper">
             <div className="fighters-container">
               {/* Explorer */}
               <div className="fighter explorer-fighter">
@@ -216,6 +215,7 @@ export const AboutUs = () => {
                   </div>
                 </div>
               </div>
+              </div>
             </div>
           </div>
 
@@ -259,9 +259,9 @@ export const AboutUs = () => {
             <h2>create a profile</h2>
           )}
           <p>
-            The first 1000 sign-ups receive free perks and benefits for life -
+            The first 1000 sign-ups receive free perks and benefits for life,
             including product discounts, exclusive content, first access to
-            events, and more.
+            events, and more—launching this summer.
           </p>
 
           {!isLoggedIn && (

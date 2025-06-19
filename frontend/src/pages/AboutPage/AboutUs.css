@@ -89,13 +89,13 @@
 
 .hero-subtitle {
   font-size: 1.2rem;
-  color: #374151;
+  color: #000000;
   margin-bottom: 3rem;
   max-width: 40rem;
   margin-left: auto;
   margin-right: auto;
   font-weight: 900;
-  margin-top: -8rem;
+  margin-top: -10rem;
   word-spacing: 2px;
 }
 
@@ -120,11 +120,29 @@
 
 
 .fighter-section {
-  padding: 80px 400px;
+  padding: 40px 400px;
   min-height: 600px;
   position: relative;
   overflow: hidden;
   z-index: 1;
+}
+@media (max-width:1680px ) {
+  .fighter-section {
+  padding: 40px 300px;
+  min-height: 600px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+}
+@media (max-width:1480px ) {
+  .fighter-section {
+  padding: 40px 200px;
+  min-height: 600px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
 }
 .fighter-title-img {
   width: 100%;
@@ -143,11 +161,25 @@
   font-weight: 600;
 }
 
-.fighters-container {
+/* .fighters-container {
   display: flex;
   align-items: flex-start;
   position: relative;
+} */
+ .fighters-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+  align-items: start;
+  margin-top: 2rem;
+  width: 100%;
+  padding-bottom: 4rem;
 }
+/* .fighter-wrapper {
+  padding: 0 10rem; 
+  width: 100%;
+} */
 
 .fighter {
   display: flex;
@@ -157,6 +189,7 @@
   flex: 1;
   width: 100%;
 }
+
 
 /* Explorer */
 .explorer-fighter .fighter-top {
@@ -338,7 +371,7 @@
 
 .opportunity-title-img {
   width: 100%;
-  max-width: 450px; /* adjust as needed */
+  max-width: 400px; /* adjust as needed */
   display: block;
   margin: 0 auto;
   /* filter: invert(1) brightness(2); */
@@ -416,8 +449,8 @@
   height: 32rem;
   width: 26rem;
   background: #fed7aa;
-  border-top-right-radius: 1.5rem;
-  border-bottom-right-radius: 1.5rem;  overflow: hidden;
+  border-radius: 1.5rem;
+  /* border-bottom-right-radius: 1.5rem;  overflow: hidden; */
   border: 5px solid white; /* Add a white border around the image */
 
 }
@@ -426,6 +459,7 @@
   width: 100%;
   height: 100%;
   object-fit:cover;
+  border-radius: 1.5rem;
 }
 
 .opportunity-content {
@@ -472,8 +506,8 @@
   background: #686566;
   padding: 4rem 0;
   padding-top: 9rem;
-  padding-bottom: 20rem;
-  margin-top: 4rem;
+  padding-bottom: 18rem;
+  margin-top: 8rem;
 }
 
 .solution-container {
@@ -484,14 +518,14 @@
   display: flex;
   align-items: center;
   position: relative;
-  margin-top: -15px;
+  margin-top: -3rem;
 }
 .section-heading {
   display: block;
-  width: 450px;
+  width: 400px;
   height: auto;
   margin: 0 auto;
-  margin-left: -6rem;
+  margin-left: -5.4rem;
   filter: invert(1) brightness(2);
 }
 
@@ -503,8 +537,8 @@
   height: 32rem;
   width: 26rem;
   background: #fed7aa;
-  border-top-right-radius: 1.5rem;
-  border-bottom-right-radius: 1.5rem;  overflow: hidden;
+  border-radius: 1.5rem;
+  /* border-bottom-right-radius: 1.5rem;  overflow: hidden; */
   border: 5px solid white; /* Add a white border around the image */
 
 }
@@ -513,6 +547,7 @@
   width: 100%;
   height: 100%;
   object-fit:cover;
+  border-radius: 1.5rem;
 }
 
 .solution-content {
@@ -562,6 +597,22 @@
   margin-bottom: 4rem;
 }
 
+.signup-box-home {
+    background: linear-gradient(to right, #ff815a, #fac3b2);
+    padding: 3rem 2rem;
+    text-align: center;
+    max-width: 900px;
+    margin: 9rem auto;
+    border-radius: 40px;
+    /* box-shadow: 0 10px 25px rgba(0.4, 0.4, 0.4, 0.4); */
+    color: white;
+    font-family: 'BasierCircle-Regular', sans-serif;
+     /* border: 1px solid #000000; */
+
+    margin-bottom: 160px;
+    margin-top: 4rem;
+    
+  }
 
 .magic-container {
   margin: 0 auto;
@@ -644,11 +695,11 @@
   }
 
   .fighter-card h3 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
   .fighter-card li {
-    font-size: 0.8rem;
+    font-size: 0.95rem;
   }
 
   .profile-pic {
@@ -760,13 +811,35 @@
   right: 3.7rem;
 }
 
+.signup-box-home {
+    padding: 3rem 2rem;
+    text-align: center;
+    margin: 2rem 2rem;
+    border-radius: 30px;
+    margin-bottom: 100px;
+    margin-top: -3rem;
+    
+  }
+  .signup-box-home h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    
+  }
+  .signup-box-home p {
+    font-size: 0.8rem;
+    margin-bottom: 1.6rem;
+    justify-content: center;
+    text-align: center;
+    padding-left: 0rem;
+  }
+
 
 .opportunity-image {
   position: relative;
   left: 0;
   top: 0;
   height: 12rem;
-  width: 60%;
+  width: 65%;
   border-radius: 1rem;
   margin-bottom: 1rem;
   margin-top: -4rem;
@@ -774,9 +847,10 @@
 }
 
 .opportunity-image img {
-  object-fit: cover;
+  object-fit:cover;
   width: 100%;
   height: 100%;
+  border-radius: 0.8rem;
 }
 .fighter-top,
 .fighter-bottom {
@@ -785,36 +859,43 @@
 }
 .solution-image {
   height: 12rem;
-  width: 70%;
-  margin-left: 19rem;
+  width: 76%;
+  margin-left: 17.8rem;
   background: none; /* Remove unwanted background */
   border-radius: 1rem;
   overflow: hidden;
-  margin-top: -6rem;
+  margin-top: -8rem;
 }
 
 .solution-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit:cover;
   display: block;
+  border-radius: 0.5rem;
+  object-position: 0% 10%;
+}
+.opportunity-content{
+  margin-top: 4.6rem;
 }
 .opportunity-content h3{
   font-size:0.8rem ;
 }
 .opportunity-content p{
-  font-size:0.6rem ;
+  font-size:0.7rem ;
 }
 .solution-content{
-  margin-top: 15rem;
-  margin-left: 2rem;
+  text-align: center;
+  justify-content: center;
+  margin-top: 21rem;
+  margin-left: 3.6rem;
   max-width: 270px;
 }
 .solution-content h3{
   font-size:0.8rem ;
 }
 .solution-content p{
-  font-size:0.6rem ;
+  font-size:0.7rem ;
 }
   .magic-section {
     margin-top: -1rem;
@@ -860,7 +941,11 @@
 
 .hero-subtitle {
   margin-top: -5rem;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
+  font-weight: 100;
+  word-spacing: 0rem;
+  max-width: 260px;
+  padding-top: 1.2rem;
 }
 .opportunity-title-img {
   margin-left: -5rem;
@@ -868,12 +953,15 @@
 }
 
 .section-heading {
-  width: 320px;
+  width: 180px;
   height: auto;
   margin: 0 auto;
-  margin-left: -1rem;
-  margin-top: -8rem;
+  /* margin-left: -1rem; */
+  margin-top: -14rem;
   margin-bottom: 0px;
+  margin-left: 1rem;
+  justify-content: center;
+  text-align: center;
 }
 .magic-title-img {
   max-width: 250px;
@@ -881,20 +969,31 @@
   margin: 0 auto;
 }
 .opportunity-para{
+  display:block;
   margin-top: -2rem;
   margin-left: -8.2rem;
   max-width: 270px;
+  justify-content: center;
+  text-align: center;
+  padding-top: 1rem;
 }
 .solution-section{
   margin-top: -3rem;
 }
 .solution-section {
   padding-bottom: 10rem;
-  margin-top: -4rem;
+  margin-top: -3rem;
 }
 .section-para{
-  margin-left: 0px;
-  margin-top: -4rem;
+  display: block;
+  max-width: 240px;
+  text-align: center;
+  justify-content: center;
+  padding-top: 1rem;
+  
+  /* margin-left: 0px;
+  margin-top: -4rem; */
+  margin-top: -2.2rem;
 }
 .fighter-section{
   margin-left: 0;
@@ -902,8 +1001,8 @@
 }
 .fighter-title-img {
  width: 100%;
-  max-width: 250px;
-    margin-top: 4rem;
+  max-width: 180px;
+    margin-top: 5rem;
 }
 .fighters-container{
   margin-top: 1rem;

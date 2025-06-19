@@ -107,9 +107,10 @@
 
   @media (max-width: 768px) {
   .partner-form {
-    padding: 1.5rem 1rem;
-    margin: 3rem auto;
-    margin-top: -2rem;
+    /* padding: 1.5rem 1rem; */
+    /* margin: 3rem auto; */
+    margin-top: 0rem;
+    /* padding-top: 3rem; */
   }
 
   .partner-heading {
@@ -118,7 +119,9 @@
   }
 
   .partner-bubble p {
+    margin-top: 1rem;
     font-size: 1rem;
+    z-index: 10;
   }
 
   .partner-contact {
@@ -133,6 +136,9 @@
 }
 
 @media (max-width: 480px) {
+  .partner-bubble{
+    margin-top: -1rem;
+  }
   .partner-heading {
     max-width: 200px;
     margin-top: 2rem;
@@ -144,6 +150,8 @@
 
   .partner-bubble p {
     font-size: 0.8rem;
+    text-wrap:initial;
+    margin-top: 0rem;
   }
 
   .partner-contact {
@@ -152,5 +160,9 @@
   }
   .partner-body-par{
     margin-top: -10px;
+  }
+  .partner-form{
+    margin-top: -2rem;
+    padding: 0 1rem;
   }
 }

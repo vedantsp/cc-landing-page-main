@@ -459,7 +459,7 @@
   max-width: 900px;
   margin: 3rem auto;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  min-height: 860px; /* ⬅️ Increase the height as needed */
+  min-height: 580px; /* ⬅️ Increase the height as needed */
   overflow: visible;  /* ⬅️ Ensure no scrollbars appear */
 }
 
@@ -1035,7 +1035,7 @@
     padding: 1rem;
     border-radius: 15px;
     margin-top: -1rem;
-    min-height: 1040px;
+    min-height: 500px;
   }
 
   .search-bar-ui {
@@ -1078,6 +1078,7 @@
 .avatars {
   display: flex;
   gap: 0.6rem; /* Space between avatars maintained */
+  margin-top: 3rem;
 }
 
 .avatar img {
