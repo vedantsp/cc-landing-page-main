@@ -105,14 +105,15 @@
 /* Scale down for small screens (mobile) WITHOUT layout break */
 @media (max-width: 475px) {
   .rounded-header {
-    padding: 0.6rem 0.8rem;
-    margin: 0.8rem;
+    padding: 0.4rem 1.4rem;
+    margin: 0.3rem;
     border-radius: 40px;
   }
 
   .logo {
     font-size: 1rem;
     padding: 0.2rem 0.6rem;
+    
   }
 
   .btns {

@@ -40,6 +40,15 @@
     #ffffff 60%   
   );
 }
+.cursor {
+  display: inline;
+  animation: blink 1s step-end infinite;
+  font-weight: bold;
+}
+.chat .cursor {
+  margin: 0;
+  line-height: 1;
+}
 
   /* .nav-bar {
     display: flex;
@@ -444,17 +453,16 @@
   } */
 
   .chat-ui-box {
-  max-width: 950px;
-  margin: 2rem auto;
-  padding: 1.5rem;
   background: white;
-  border-radius: 40px;
-  /* box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); */
-   border: 1px solid #000000;
-  font-family: sans-serif;
+  border-radius: 30px;
+  padding: 1.5rem;
+  max-width: 900px;
+  margin: 3rem auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  min-height: 860px; /* ⬅️ Increase the height as needed */
+  overflow: visible;  /* ⬅️ Ensure no scrollbars appear */
 }
 
-/* Merged search bar */
 .search-bar-ui {
   background: #f9f9f9;
   border-radius: 40px;
@@ -493,8 +501,11 @@
 /* Chat section */
 .chat-container {
   display: flex;
+  max-height: none;
+
   flex-direction: column;
   gap: 1rem;
+  overflow-y: visible;
 }
 
 .chat {
@@ -1024,6 +1035,7 @@
     padding: 1rem;
     border-radius: 15px;
     margin-top: -1rem;
+    min-height: 1040px;
   }
 
   .search-bar-ui {

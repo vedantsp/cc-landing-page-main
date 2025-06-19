@@ -10,7 +10,7 @@ export const Navbar = ({ page }) => {
             <li>
               <NavLink 
                 to="/" 
-                className={page === 'AboutUs' || page === 'Partner' || page === 'Invest' ? "active-link" : ""}
+                className={page === 'Partner' || page === 'Invest' ? "active-link" : ""}
               >
                 <button>Home</button>
               </NavLink>
@@ -18,7 +18,7 @@ export const Navbar = ({ page }) => {
             <li>
               <NavLink 
                 to="/aboutUs" 
-                className={page === 'AboutUs' || page === 'Partner' || page === 'Invest'? "active-link" : ""}
+                className={page === 'Partner' || page === 'Invest'? "active-link" : ""}
               >
                 <button>About</button>
               </NavLink>
@@ -26,7 +26,7 @@ export const Navbar = ({ page }) => {
             <li>
               <NavLink 
                 to="/partner" 
-                className={page === 'AboutUs'|| page === 'Partner' || page === 'Invest' ? "active-link" : ""}
+                className={page === 'Partner' || page === 'Invest' ? "active-link" : ""}
               >
                 <button>Become a Partner</button>
               </NavLink>
@@ -37,7 +37,7 @@ export const Navbar = ({ page }) => {
             <li>
               <NavLink 
                 to="/invest" 
-                className={page === 'AboutUs'|| page === 'Partner' || page === 'Invest' ? "active-link" : ""}
+                className={page === 'Partner' || page === 'Invest' ? "active-link" : ""}
               >
                 <button>Invest</button>
               </NavLink>

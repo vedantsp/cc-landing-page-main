@@ -50,8 +50,8 @@
   min-height: 100vh;
    background: linear-gradient(
     to bottom,
-    #5ab17e 0%,
-    #ffffff 20%   
+    #ff9a7a 0%,
+    #ffffff 28%   
   );
 }
 
@@ -77,12 +77,12 @@
   align-items: center;
   margin: 2rem auto;
   max-width: 100%;
-  margin-top: -4rem;
+  margin-top: -6rem;
 }
 
 .hero-title-img img {
   width: 100%;
-  max-width: 700px; /* Adjust based on your image */
+  max-width: 900px; /* Adjust based on your image */
   height: auto;
   display: block;
 }
@@ -96,6 +96,7 @@
   margin-right: auto;
   font-weight: 900;
   margin-top: -8rem;
+  word-spacing: 2px;
 }
 
 /* .hero-description {
@@ -119,7 +120,7 @@
 
 
 .fighter-section {
-  padding: 80px 110px;
+  padding: 80px 400px;
   min-height: 600px;
   position: relative;
   overflow: hidden;
@@ -194,10 +195,10 @@
 
 /* Fighter cards */
 .fighter-card {
-  background: white;
+  background: #efefef;
   border-radius: 20px;
   padding: 25px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); */
   width: 234px;
   text-align: center;
 }
@@ -205,7 +206,7 @@
 .fighter-card .fighter-icon {
   font-size: 3rem; /* Ensure the icon size matches */
   color: white; /* Change icon color to white */
-  background-color: #4CAF50; /* Green background */
+  background-color: #ff9a7a; /* Green background */
   border-radius: 50%; /* Circular background */
   padding: 15px; /* Ensure padding matches */
   display: flex;
@@ -268,7 +269,7 @@
   object-fit: cover;
 }
 
-.we-com {
+/* .we-com {
   position: relative;
   left: 50%;
   right: 50%;
@@ -283,7 +284,7 @@
   margin-top: -19.5rem;
   z-index: 0;
   color: white;
-}
+} */
 
 /* .we-com-tag {
   font-size: 2.5rem;
@@ -340,7 +341,7 @@
   max-width: 450px; /* adjust as needed */
   display: block;
   margin: 0 auto;
-  filter: invert(1) brightness(2);
+  /* filter: invert(1) brightness(2); */
   margin-left: -2rem;
 }
 
@@ -384,8 +385,8 @@
 /* Opportunity Section */
 /* Opportunity Section */
 .opportunity-section {
-  background: #686566;
-  color: white;
+  /* background: #686566; */
+  color: rgb(0, 0, 0);
   padding: 4rem 0;
   margin-top: -6rem;
    padding-top: 6rem;
@@ -409,10 +410,11 @@
 
 .opportunity-image {
   position: absolute;
-  top: -100px;
+  top: 0px;
   left: -200px;
   z-index: 10;
-  height: 26rem;
+  height: 32rem;
+  width: 26rem;
   background: #fed7aa;
   border-top-right-radius: 1.5rem;
   border-bottom-right-radius: 1.5rem;  overflow: hidden;
@@ -423,14 +425,14 @@
 .opportunity-image img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit:cover;
 }
 
 .opportunity-content {
   align-items:flex-start;
   justify-content: left;
-  margin-left: 170px;
-  margin-top: -4rem;
+  margin-left: 18rem;
+  margin-top: 4rem;
   z-index: 1;
 }
 .opportunity-content h3{
@@ -467,9 +469,11 @@
 
 /* Solution Section */
 .solution-section {
-  background: white;
+  background: #686566;
   padding: 4rem 0;
-  padding-bottom: 10rem;
+  padding-top: 9rem;
+  padding-bottom: 20rem;
+  margin-top: 4rem;
 }
 
 .solution-container {
@@ -488,19 +492,19 @@
   height: auto;
   margin: 0 auto;
   margin-left: -6rem;
+  filter: invert(1) brightness(2);
 }
 
 .solution-image {
   position: absolute;
-  top: -100px;
-  right: -184px;
+  top: 0px;
+  left: -240px;
   z-index: 10;
-  height: 26rem;
-  background: #f3f4f6;
-  border-top-left-radius: 1.5rem;
-  border-bottom-left-radius: 1.5rem;
-
-  overflow: hidden;
+  height: 32rem;
+  width: 26rem;
+  background: #fed7aa;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;  overflow: hidden;
   border: 5px solid white; /* Add a white border around the image */
 
 }
@@ -508,15 +512,16 @@
 .solution-image img {
   width: 100%;
   height: 100%;
-  object-fit:contain
+  object-fit:cover;
 }
 
 .solution-content {
   margin-top: 0rem;
   align-items:flex-start;
   justify-content: left;
-  margin-left: 70px;
+  margin-left: 17rem;
   z-index: 1;
+  padding-top: 4rem;
   /* padding-bottom: rem; */
 }
 .solution-content h2{
@@ -535,6 +540,7 @@
 .section-para{
   margin-left: -14px;
   margin-top: -4rem;
+  color: white;
 }
 
 
@@ -780,10 +786,11 @@
 .solution-image {
   height: 12rem;
   width: 70%;
-  margin-right: 15rem;
+  margin-left: 19rem;
   background: none; /* Remove unwanted background */
   border-radius: 1rem;
   overflow: hidden;
+  margin-top: -6rem;
 }
 
 .solution-image img {
@@ -801,6 +808,7 @@
 .solution-content{
   margin-top: 15rem;
   margin-left: 2rem;
+  max-width: 270px;
 }
 .solution-content h3{
   font-size:0.8rem ;
@@ -855,14 +863,15 @@
   font-size: 0.8rem;
 }
 .opportunity-title-img {
-  margin-left: -1.4rem;
+  margin-left: -5rem;
+  margin-top: -5rem;
 }
 
 .section-heading {
   width: 320px;
   height: auto;
   margin: 0 auto;
-  margin-left: -2rem;
+  margin-left: -1rem;
   margin-top: -8rem;
   margin-bottom: 0px;
 }
@@ -870,5 +879,33 @@
   max-width: 250px;
   display: block;
   margin: 0 auto;
+}
+.opportunity-para{
+  margin-top: -2rem;
+  margin-left: -8.2rem;
+  max-width: 270px;
+}
+.solution-section{
+  margin-top: -3rem;
+}
+.solution-section {
+  padding-bottom: 10rem;
+  margin-top: -4rem;
+}
+.section-para{
+  margin-left: 0px;
+  margin-top: -4rem;
+}
+.fighter-section{
+  margin-left: 0;
+  padding: 0 1.5rem;
+}
+.fighter-title-img {
+ width: 100%;
+  max-width: 250px;
+    margin-top: 4rem;
+}
+.fighters-container{
+  margin-top: 1rem;
 }
 }

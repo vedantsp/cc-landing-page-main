@@ -141,216 +141,61 @@
 
 /* Responsive - Tablet & Mobile */
 @media (max-width: 768px) {
-  .footer-container {
-    padding: 1.5rem 1rem;
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
-
 
   .footer-left {
-    flex: 1;
-    min-width: 130px;
-  }
-
-  .footer-tagline-img img {
-    width: 12rem;
-    height: auto;
-    display: block;
+    order: 1;
+    margin-bottom: 1rem;
   }
 
   .footer-right {
-    margin-left: -3rem;
-    flex: 1;
-    min-width: 140px;
-    margin-top: 0;
+    order: 2;
+    margin-top: -2rem;
     padding-left: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-    align-items: flex-start;
-  }
-
-  .newsletter-label {
-    font-size: 0.8rem;
-    font-weight: 900;
-    text-transform: lowercase;
+    align-items: center;
   }
 
   .newsletter-form {
-    display: flex;
-    gap: 0.4rem;
-    flex-wrap: nowrap;
-    width: 100%;
-    align-items: center;
-  }
-
-  .newsletter-input {
-    width: 8rem;
-    height: 2rem;
-    font-size: 0.9rem;
-    padding: 0.5rem;
-  }
-
-  .btn-submit {
-    height: 2rem;
-    font-size: 0.6rem;
-    padding: 0 0.5rem;
-  }
-
-  /* Stay in loop section should come full width below */
-  .social-footer {
-    width: 100%;
-    margin-top: 1rem;
-    margin-left: -6rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .social-footer p {
-    font-weight: bold;
-    font-size: 0.9rem;
-    padding-left: 0;
-    /* margin-bottom: 0.5rem; */
-    margin-left: 8rem;
-  }
-
-  .footer-arrow {
-    width: 2.4rem;
-    margin-right: 1.6rem;
-  }
-
-  .footer-tags {
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 0.5rem;
   }
 
-  .footer-tags a {
-    font-size: 0.8rem;
-    padding: 0.3rem 0.8rem;
-  }
-  .email-link{
-    margin-left: -4rem;
+  .social-footer {
+    order: 3;
+    margin-top: 1rem;
   }
 
-  .copy {
-    margin-top: 3rem;
-    font-size: 0.8rem;
-    text-align: center;
+  .email-link {
+    order: 4;
+    margin-top: 0.5rem;
   }
+  .footer-tagline-img img {
+  width: 500px;
+  display: flex;
+  justify-content: center;
 }
-
-@media (max-width: 480px) {
-  .footer-container {
-    padding: 1.5rem 1rem;
-  }
-
-
-  .footer-left {
-    flex: 1;
-    min-width: 130px;
-  }
-
-  .footer-tagline-img img {
-    width: 8rem;
-    height: auto;
-    display: block;
-  }
-
-  .footer-right {
-    margin-left: -3rem;
-    flex: 1;
-    min-width: 140px;
-    margin-top: 0;
-    padding-left: 0;
-    display: flex;
+.footer-tagline-img img {
+  width: 500px;
+  height: auto;
+}
+.newsletter-form {
     flex-direction: column;
-    gap: 0.8rem;
-    align-items: flex-start;
-  }
-
-  .newsletter-label {
-    font-size: 0.6rem;
-    font-weight: 900;
-    text-transform: lowercase;
-    margin-left: 0.2rem;
-  }
-
-  .newsletter-form {
-    display: flex;
-    gap: 0.4rem;
-    flex-wrap: nowrap;
-    width: 100%;
     align-items: center;
   }
 
-  .newsletter-input {
-    
-     width: 8rem;     /* reduced width */
-  height: 1.5rem;    /* reduced height */
-  font-size: 0.75rem; /* slightly smaller text */
-  padding: 0.3rem 0.5rem;
-  border-radius: 10px;
-  border: none;
-  outline: none;
-  flex: 0;
+  .newsletter-input,
+  .btn-submit {
+    width: 90%;
+    max-width: 20rem;
   }
 
   .btn-submit {
-    height: 1.4rem;
-    font-size: 0.6rem;
-    padding: 0 0.5rem;
+    margin-top: 0.5rem;
   }
-
-  /* Stay in loop section should come full width below */
-  .social-footer {
-    width: 100%;
-    margin-top: 1rem;
-    margin-left: -6rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .social-footer p {
-    font-weight: bold;
-    font-size: 0.6rem;
-    padding-left: 0;
-    /* margin-bottom: 0.5rem; */
-    margin-left: 7rem;
-    margin-right: -5rem;
-  }
-
-  .footer-arrow {
-    width: 2rem;
-    margin-right: -1.6rem;
-    margin-top: -0.3rem;
-  }
-
-  .footer-tags {
-    justify-content: center;
-    flex-wrap:nowrap;
-    gap: 0.5rem;
-    margin-left: 4rem;
-  }
-
-  .footer-tags a {
-    font-size: 0.6rem;
-    padding: 0.3rem 0.8rem;
-  }
-  .email-link{
-    margin-left: -3rem;
-    font-size: 0.8rem;
-  }
-
-  .copy {
-    margin-top: 3rem;
-    font-size: 0.8rem;
-    text-align: center;
-  }
-  .newsletter-form span{
-    font-size: 0.4rem;
-  }
+  .newsletter-input::placeholder {
+  font-size: 0.95rem; 
+}
 }

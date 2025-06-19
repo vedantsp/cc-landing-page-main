@@ -1,14 +1,37 @@
-import React from "react";
+import { React, useState} from "react";
 import "./AboutUs.css";
+import { useAuth } from "../../store/auth";
+import { toast } from "react-toastify";
 import { MdPersonAddAlt1 } from "react-icons/md";
 import { BiSearch } from "react-icons/bi";
 import { IoCartSharp } from "react-icons/io5";
 import { Navbar } from "../../components/NavbarComponent/Navbar";
+import { Modal } from "../../components/Modal/Modal";
+import { Register } from "../RegisterPage/Register";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
+const API_URL = process.env.REACT_APP_BACKEND_URL;
 
 
 export const AboutUs = () => {
+  const { isLoggedIn } = useAuth();
+    const [showRegister, setShowRegister] = useState(false);
+  
+    const handleSubmit = async (e) => {
+      if(isLoggedIn){
+        toast.success('Your are already logged in')
+      }
+      else{
+        try {
+          window.location.href = `${API_URL}/auth/google`;
+        } catch (error) {
+          console.log(error);
+        }
+      }
+  
+  
+     
+    };
   return (
     <>
     <section className="cleanclick-container">
@@ -45,7 +68,89 @@ export const AboutUs = () => {
             </p>
           </div> */}
 
-          {/* Pick Your Fighter Section */}
+
+          <div className="we-com">
+          {/* <div className="we-com-tagline-img">
+  <img src="/images/footer-image.png" alt="AI-powered clean living tagline" />
+</div> */}
+        </div>
+        </div>
+      </section>
+
+      {/* The Opportunity Section */}
+      <section className="opportunity-section">
+        <div className="opportunity-container">
+          <div className="opportunity-image">
+            <img src="/images/5.png" alt="Person with natural skincare" />
+          </div>
+          <div className="opportunity-content">
+            <img
+  src="/images/the-opportunity.png"
+  alt="The Opportunity"
+  className="opportunity-title-img"
+/>
+<div className="opportunity-para">
+                <h3>Consumers are hungry for change</h3>
+                <p>
+                  The growing wave of environmentally and socially conscious
+                  shoppers want products that align with their values.
+                </p>
+                <h3>Brands are missing the connection</h3>
+                <p>
+                  Many purpose-driven brands struggle to reach their audience
+                  effectively—especially those seeking content, impact-focused
+                  channels.
+                </p>
+                <h3>Content overload is real</h3>
+                <p>
+                  People crave clean-living guidance but are overwhelmed by
+                  noise—CleanClick cuts through the clutter with clarity and
+                  community.
+                </p>
+                </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Solution Section */}
+      <section className="solution-section">
+        <div className="solution-container">
+          <div className="solution-image">
+            <img src="/images/6.png" alt="Clean living products" />
+          </div>
+          <div className="solution-content">
+            <img
+  src="/images/our-solution.png"
+  alt="Our Solution"
+  className="section-heading"
+/>
+<div className="section-para">
+                <h3>Curated discovery</h3>
+                <p>
+                  Find vetted, clean-living brands tailored to your lifestyle.
+                </p>
+                <h3>Engaging content</h3>
+                <p>
+                  Scroll without the "brainrot"—quality videos, guides, and
+                  stories that inform and inspire.
+                </p>
+                <h3>Social connection</h3>
+                <p>
+                  Connect with like-minded people, share tips, and amplify
+                  authentic voices.
+                </p>
+                <h3>Seamless shopping</h3>
+                <p>
+                  Buy better products from brands with purpose—all in one
+                  intuitive environment.
+                </p>
+                </div>
+          </div>
+          
+        </div>
+      </section>
+
+      {/* Pick Your Fighter Section */}
           <div className="fighter-section">
             <img
   src="/images/pick-your-fighter.png"
@@ -114,91 +219,10 @@ export const AboutUs = () => {
             </div>
           </div>
 
-          <div className="we-com">
-          {/* <div className="we-com-tagline-img">
-  <img src="/images/footer-image.png" alt="AI-powered clean living tagline" />
-</div> */}
-        </div>
-        </div>
-      </section>
-
-      {/* The Opportunity Section */}
-      <section className="opportunity-section">
-        <div className="opportunity-container">
-          <div className="opportunity-image">
-            <img src="/images/5.png" alt="Person with natural skincare" />
-          </div>
-          <div className="opportunity-content">
-            <img
-  src="/images/the-opportunity.png"
-  alt="The Opportunity"
-  className="opportunity-title-img"
-/>
-<div className="opportunity-para">
-                <h3>Consumers are hungry for change</h3>
-                <p>
-                  The growing wave of environmentally and socially conscious
-                  shoppers want products that align with their values.
-                </p>
-                <h3>Brands are missing the connection</h3>
-                <p>
-                  Many purpose-driven brands struggle to reach their audience
-                  effectively—especially those seeking content, impact-focused
-                  channels.
-                </p>
-                <h3>Content overload is real</h3>
-                <p>
-                  People crave clean-living guidance but are overwhelmed by
-                  noise—CleanClick cuts through the clutter with clarity and
-                  community.
-                </p>
-                </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Our Solution Section */}
-      <section className="solution-section">
-        <div className="solution-container">
-          <div className="solution-content">
-            <img
-  src="/images/our-solution.png"
-  alt="Our Solution"
-  className="section-heading"
-/>
-<div className="section-para">
-                <h3>Curated discovery</h3>
-                <p>
-                  Find vetted, clean-living brands tailored to your lifestyle.
-                </p>
-                <h3>Engaging content</h3>
-                <p>
-                  Scroll without the "brainrot"—quality videos, guides, and
-                  stories that inform and inspire.
-                </p>
-                <h3>Social connection</h3>
-                <p>
-                  Connect with like-minded people, share tips, and amplify
-                  authentic voices.
-                </p>
-                <h3>Seamless shopping</h3>
-                <p>
-                  Buy better products from brands with purpose—all in one
-                  intuitive environment.
-                </p>
-                </div>
-          </div>
-          <div className="solution-image">
-            <img src="/images/6.png" alt="Clean living products" />
-          </div>
-        </div>
-      </section>
-
       {/* The Magic Section */}
-      <section className="magic-section">
+      {/* <section className="magic-section">
         <div className="magic-container">
           <div className="magic-content">
-            {/* <img src="/images/spark.png" alt="sparkle" className="sparkle-icon-magic" /> */}
             <img
   src="/images/the-magic.png"
   alt="The Magic"
@@ -226,12 +250,48 @@ export const AboutUs = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
+      <section className="signup-box-home">
+          {isLoggedIn ? (
+            <h2>Congratulations! Your profile has been created.</h2>
+          ) : (
+            <h2>create a profile</h2>
+          )}
+          <p>
+            The first 1000 sign-ups receive free perks and benefits for life -
+            including product discounts, exclusive content, first access to
+            events, and more.
+          </p>
+
+          {!isLoggedIn && (
+            <>
+              <button
+                className="signup-btn facebook"
+                onClick={() => setShowRegister(true)}
+              >
+                <i className="fa fa-envelope"></i> Sign Up with Mail
+              </button>
+              <button onClick={handleSubmit} className="signup-btn google">
+                <i className="fab fa-google"></i> Sign Up with Google
+              </button>
+            </>
+          )}
+
+        </section>
 
       {/* Footer CTA */}
     </section>
     
     <Footer/>
+    {showRegister && (
+                  <Modal onClose={() => setShowRegister(false)}>
+                    <Register
+                      onSuccess={() => setShowRegister(false)}
+                      onCancel={() => setShowRegister(false)}
+                    />
+                  </Modal>
+                )}
     </>
     
   );

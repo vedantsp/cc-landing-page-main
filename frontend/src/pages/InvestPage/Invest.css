@@ -108,7 +108,7 @@
   max-width: 400px; 
   display: block;
   margin: 0 auto;
-  margin-top: -7rem;
+  margin-top: -8rem;
 }
 
 .invest-section p {
@@ -150,5 +150,8 @@
   .invest-section p,
   .invest-section .invest-email {
     font-size: 0.95rem;
+  }
+  .invest-content p{
+    font-size: 0.9rem;
   }
 }

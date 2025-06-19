@@ -19,16 +19,18 @@ const Invest = () => {
   alt="Invest in us" 
   className="invest-heading-img" 
 />
+<div className='invest-content'>
   <p>
-    CleanClick is where impact meets opportunity—<br />
-    the intersection of tech, community, and conscious commerce.
+    <strong>CleanClick is where impact meets opportunity— </strong><br />
+    the powerful intersection of technology, community, and conscious commerce.
   </p> <br />
   <p>
-    We invite mission-aligned investors to help us scale this movement, to<br />
-    shape a cleaner, brighter future for generations to come.
+    We’re inviting visionary investors to partner with us in shaping the future.<br />
+    Together, we can scale fast, disrupt the market, and create lasting change for generations to come.
   </p> <br />
-  <p>Get in touch to explore our deck and next steps.</p>
-  <p className="invest-email"><strong>hello@cleanclick.com</strong></p>
+  <p>This is your chance to invest in a future that’s as profitable as it is purposeful.</p>
+  <p className="invest-email"><strong>hello@cleanclickgroup.com</strong></p>
+  </div>
 </div>
 
       </section>
