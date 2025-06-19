@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "../../pages/HomePage/Home.css";
 
 const animatedMessages = [
@@ -92,7 +92,13 @@ const AnimatedChatBot = () => {
       </div>
     );
   };
+  const chatContainerRef = useRef(null);
 
+useEffect(() => {
+  if (chatContainerRef.current) {
+    chatContainerRef.current.scrollTop = chatContainerRef.current.scrollHeight;
+  }
+}, [messages, typing]);
   return (
     <div
       className="chat-ui-box"
@@ -107,6 +113,7 @@ const AnimatedChatBot = () => {
         flexDirection: "column",
       }}
     >
+      
       <div className="search-bar-ui">
         <i className="fas fa-search search-icon"></i>
         <input
@@ -118,7 +125,7 @@ const AnimatedChatBot = () => {
       </div>
 
       <div
-        className="chat-container"
+        className="chat-container" ref={chatContainerRef}
         style={{ flex: 1, overflowY: "auto", padding: "1rem" }}
       >
         {messages.map((msg, i) =>
@@ -147,6 +154,8 @@ const AnimatedChatBot = () => {
         )}
       </div>
     </div>
+    
+    
   );
 };
 

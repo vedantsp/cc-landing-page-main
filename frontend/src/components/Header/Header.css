@@ -119,7 +119,7 @@
   }
 
   .btns {
-    margin-top: -4px;
+    margin-top: 0px;
     flex-direction: row;         /* Keep row layout */
     flex-wrap: wrap;
     justify-content: flex-end;
