@@ -29,7 +29,7 @@ const Invest = () => {
     This is your chance to help shape a future that’s profitable and purposeful.
   </p> <br />
   {/* <p>This is your chance to invest in a future that’s as profitable as it is purposeful.</p> */}
-  <p className="invest-email"><strong>Let’s chat: hello@cleanclickgroup.com</strong></p>
+  <p className="invest-email"><strong>Let’s chat: hello@joincleanclick.com</strong></p>
   </div>
 </div>
 

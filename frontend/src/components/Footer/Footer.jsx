@@ -119,7 +119,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <p className="email-link">✉ hello@cleanclickgroup.com</p>
+          <p className="email-link">✉ hello@joincleanclick.com</p>
         </div>
       </div>
 
