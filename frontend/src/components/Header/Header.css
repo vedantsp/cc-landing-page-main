@@ -154,4 +154,13 @@
   pointer-events: auto;
 }
 
+.header-container {
+  position: static !important;
+  z-index: auto !important;
+}
 
+/* keep just the buttons lifted (no parent context) */
+.btns {
+  position: relative;
+  z-index: 11;
+}
