@@ -138,7 +138,21 @@
   }
   
 }
+.header-container {
+  position: relative;
+  z-index: 10;
+}
 
+/* lift just the button group a notch higher */
+.btns {
+  position: relative;
+  z-index: 11;
+}
+
+/* ensure the buttons themselves can always receive touches */
+.btns button {
+  pointer-events: auto;
+}
 
 
 
