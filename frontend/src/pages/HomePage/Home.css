@@ -1151,5 +1151,60 @@
 }
 
 
+/* Vedant added this code to fix the issue with create a profile button */
+/* Add these new styles at the bottom of your existing CSS */
 
+/* Button Fixes */
+.signup-btn {
+  position: relative;
+  z-index: 1000;
+  min-height: 44px; /* Minimum touch target size for mobile */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.signup-btn:active {
+  transform: scale(0.98);
+}
+
+.signup-box-home {
+  position: relative;
+  overflow: visible;
+}
+
+/* Mobile Tap Target Fixes */
+@media (max-width: 768px) {
+  .signup-btn {
+    width: 90%;
+    padding: 12px 0;
+    font-size: 1rem;
+  }
+  
+  .signup-box-home {
+    margin: 2rem 1rem;
+    padding: 2rem 1rem;
+  }
+}
+
+/* Prevent button overlap */
+.grid-gallery + .definition {
+  position: relative;
+  z-index: 1;
+}
+
+/* Accessibility improvements */
+.signup-btn:focus {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+/* Debug border (remove in production) */
+/* .signup-btn.google {
+  border: 1px solid red;
+} */
+
+/* Ensure buttons are above other content */
+.signup-box-home {
+  z-index: 100;
+}
 
