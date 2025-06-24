@@ -96,7 +96,7 @@
   font-weight: normal;
   font-size: 0.95rem;
   margin: 0.5rem 0;
-  padding-left: 11rem;
+  padding-left: 16rem;
 }
 
 .footer-arrow {
@@ -216,6 +216,7 @@
 }
 .social-footer p{
   margin-right: -2rem;
+  padding-left: 12rem;
   font-size: 0.8rem;
 }
 
@@ -238,6 +239,7 @@
   transition: background 0.3s ease;
 }
 .social-footer p{
+  padding-left: 11rem;
   margin-right: -1rem;
   font-size: 0.6rem;
 }
