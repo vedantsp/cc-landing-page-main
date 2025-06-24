@@ -117,6 +117,13 @@ const Footer = () => {
               >
                 youtube
               </a>
+              <a
+    href="https://www.linkedin.com/company/clean-click-world/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    linkedin
+  </a>
             </div>
           </div>
           <p className="email-link">✉ hello@joincleanclick.com</p>
