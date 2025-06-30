@@ -7,7 +7,7 @@ const passport = require('passport');
 const authMiddleware = require('../middlewares/auth-middleware')
 const authController = require('../controllers/auth-controller');
 
-const User = require('../models/user-model')
+const {User} = require('../models/user-model')
 
 
 router.route("/").get(authController.home);

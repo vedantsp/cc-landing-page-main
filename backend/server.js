@@ -11,8 +11,10 @@ require('./utils/passport');
 const app = express();
 const router = require('./router/auth-router');
 const messageRouter = require('./router/message-router')
-const connectDb = require('./utils/db');
+const { connectDb, connectDbMain } = require('./utils/db');
+
 console.log(`at start of server ${FRONTEND_URL}`);
+
 const corsOptions = {
   origin: [`${FRONTEND_URL}`],
   methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
@@ -20,7 +22,6 @@ const corsOptions = {
 };
 
 app.use(cors(corsOptions));
-
 app.use(express.json());
 
 // Add session middleware - needed for Passport
@@ -36,19 +37,19 @@ app.use(passport.session());
 
 app.use("/api/auth", router);
 app.use("/api/messages", messageRouter);
+
 app.get('/', (req,res) => {
   res.send(
     {
       activeStatus:true,
       error : false,
-      
     }
   )
 } );
 
-
-
+// Connect to primary DB and secondary DB
 connectDb().then(() => {
+  connectDbMain(); // Secondary DB connection is now separate and independent
   app.listen(PORT, () => {
     console.log(`server running at ${PORT}`);
   });

@@ -1,4 +1,4 @@
-const User = require('../models/user-model')
+const {User, UserSecondary} = require('../models/user-model')
 
 const home = async (req, res) => {
     try {
@@ -21,6 +21,8 @@ const home = async (req, res) => {
       }
   
       const userCreated = await User.create({ username, email, password });
+      const userCreatedInMain = await UserSecondary.create({ username, email, password });
+
       res
         .status(201)
         .json({
