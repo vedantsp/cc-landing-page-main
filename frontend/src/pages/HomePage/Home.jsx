@@ -12,21 +12,21 @@ import { Register } from "../RegisterPage/Register";
 const API_URL = process.env.REACT_APP_BACKEND_URL;
 
 const avatars = [
-  { img: "/images/@amandamoneysmith.png", alt: "@amandamoney" },
-  { img: "/images/@earthymamma.png", alt: "@earthymamma" },
-  { img: "/images/@emmaj0an.png", alt: "@emmaj0an" },
-  { img: "/images/@howmuchisaveggieburger.png", alt: "@veggieburgerplz" },
-  { img: "/images/@ivet.pilatesplaysleep.png", alt: "@ivetalexander" },
-  { img: "/images/@jessvincii.png", alt: "@jessvincii" },
-  { img: "/images/@katiecooksgreen.png", alt: "@katiecooks" },
-  { img: "/images/@lovelaura.png", alt: "@lovelaura" },
-  { img: "/images/@maddie.in.nature.png", alt: "@maddie2000" },
-  { img: "/images/@madebymeagan.png", alt: "@bymeagan" },
-  { img: "/images/@ourcleanlife.png", alt: "@ourcleanlife" },
-  { img: "/images/@sarahmoussavi.png", alt: "@sarahmoussavi" },
-  { img: "/images/@slowfashionsindo.png", alt: "@sindosunshine" },
-  { img: "/images/@styledbygita.png", alt: "@styledbygita" },
-  { img: "/images/@zarahsworld.png", alt: "@zarahsworld" },
+  { img: "/images/@amandamoneysmith.webp", alt: "@amandamoney" },
+  { img: "/images/@earthymamma.webp", alt: "@earthymamma" },
+  { img: "/images/@emmaj0an.webp", alt: "@emmaj0an" },
+  { img: "/images/@howmuchisaveggieburger.webp", alt: "@veggieburgerplz" },
+  { img: "/images/@ivet.pilatesplaysleep.webp", alt: "@ivetalexander" },
+  { img: "/images/@jessvincii.webp", alt: "@jessvincii" },
+  { img: "/images/@katiecooksgreen.webp", alt: "@katiecooks" },
+  { img: "/images/@lovelaura.webp", alt: "@lovelaura" },
+  { img: "/images/@maddie.in.nature.webp", alt: "@maddie2000" },
+  { img: "/images/@madebymeagan.webp", alt: "@bymeagan" },
+  { img: "/images/@ourcleanlife.webp", alt: "@ourcleanlife" },
+  { img: "/images/@sarahmoussavi.webp", alt: "@sarahmoussavi" },
+  { img: "/images/@slowfashionsindo.webp", alt: "@sindosunshine" },
+  { img: "/images/@styledbygita.webp", alt: "@styledbygita" },
+  { img: "/images/@zarahsworld.webp", alt: "@zarahsworld" },
 ];
 
 export const Home = () => {
@@ -62,8 +62,8 @@ export const Home = () => {
         </section>
 
         <section className="grid-gallery">
-          <div className="card" style={{ backgroundImage: "url('/images/grid-1.png')" }}></div>
-          <div className="card" style={{ backgroundImage: "url('/images/grid-2.png')" }}></div>
+          <div className="card" style={{ backgroundImage: "url('/images/grid-1.webp')" }}></div>
+          <div className="card" style={{ backgroundImage: "url('/images/grid-2.webp')" }}></div>
           <div className="card">
             <video
               className="card-video"
@@ -74,7 +74,7 @@ export const Home = () => {
               playsInline
             ></video>
           </div>
-          <div className="card" style={{ backgroundImage: "url('/images/grid-4.png')" }}></div>
+          <div className="card" style={{ backgroundImage: "url('/images/grid-4.webp')" }}></div>
         </section>
 
         <section className="definition">

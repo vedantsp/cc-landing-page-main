@@ -94,7 +94,7 @@ const Footer = () => {
             <p className="footer-tags-p" style={{ fontWeight: "bold" }}>
               stay in the loop
             </p>
-            <img src="/images/arrow.png" alt="arrow" className="footer-arrow" />
+            <img src="/images/arrow.webp" alt="arrow" className="footer-arrow" />
             <div className="footer-tags">
               <a
                 href="https://www.instagram.com/cleanclick_/"

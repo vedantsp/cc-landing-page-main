@@ -81,7 +81,7 @@ export const AboutUs = () => {
       <section className="opportunity-section">
         <div className="opportunity-container">
           <div className="opportunity-image">
-            <img src="/images/5.png" alt="Person with natural skincare" />
+            <img src="/images/5.webp" alt="Person with natural skincare" />
           </div>
           <div className="opportunity-content">
             <img
@@ -113,7 +113,7 @@ export const AboutUs = () => {
       <section className="solution-section">
         <div className="solution-container">
           <div className="solution-image">
-            <img src="/images/solution-new.jpg" alt="Clean living products" />
+            <img src="/images/solution-new.webp" alt="Clean living products" />
           </div>
           <div className="solution-content">
             <img
@@ -172,7 +172,7 @@ export const AboutUs = () => {
                 </div>
                 <div className="fighter-top">
                   <div className="profile-pic explorer-profile">
-                    <img src="/images/8.png" alt="Explorer" />
+                    <img src="/images/8.webp" alt="Explorer" />
                   </div>
                 </div>
               </div>
@@ -192,7 +192,7 @@ export const AboutUs = () => {
                 </div>
                 <div className="fighter-bottom">
                   <div className="profile-pic creator-profile">
-                    <img src="/images/9.png" alt="Creator" />
+                    <img src="/images/9.webp" alt="Creator" />
                   </div>
                 </div>
               </div>
@@ -211,7 +211,7 @@ export const AboutUs = () => {
                 </div>
                 <div className="fighter-bottom">
                   <div className="profile-pic shopper-profile">
-                    <img src="/images/10.png" alt="Shopper" />
+                    <img src="/images/10.webp" alt="Shopper" />
                   </div>
                 </div>
               </div>
