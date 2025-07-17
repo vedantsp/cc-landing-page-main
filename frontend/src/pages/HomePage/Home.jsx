@@ -9,6 +9,8 @@ import AnimatedChatBot from "../../components/Animationchat/AnimationChatBot";
 import { Modal } from "../../components/Modal/Modal";
 import { Register } from "../RegisterPage/Register";
 
+
+
 const API_URL = process.env.REACT_APP_BACKEND_URL;
 
 const avatars = [
@@ -33,6 +35,7 @@ export const Home = () => {
   const { isLoggedIn } = useAuth();
   const [showRegister, setShowRegister] = useState(false);
 
+
   const handleAuth = async (e) => {
     e.preventDefault();
     try {
@@ -46,7 +49,8 @@ export const Home = () => {
       toast.error('Login failed. Please try again.');
       console.error('Authentication error:', error);
     }
-  };
+  }; 
+
 
   return (
     <>
@@ -62,9 +66,9 @@ export const Home = () => {
         </section>
 
         <section className="grid-gallery">
-          <div className="card" style={{ backgroundImage: "url('/images/grid-1.webp')" }}></div>
-          <div className="card" style={{ backgroundImage: "url('/images/grid-2.webp')" }}></div>
-          <div className="card">
+          <div className="card" onClick={() => setShowRegister(true)} style={{ backgroundImage: "url('/images/grid-1.webp')" }}></div>
+          <div className="card" onClick={() => setShowRegister(true)} style={{ backgroundImage: "url('/images/grid-2.webp')" }}></div>
+          <div className="card" onClick={() => setShowRegister(true)}>
             <video
               className="card-video"
               src="/videos/h-m.mp4"
@@ -74,7 +78,7 @@ export const Home = () => {
               playsInline
             ></video>
           </div>
-          <div className="card" style={{ backgroundImage: "url('/images/grid-4.webp')" }}></div>
+          <div className="card" onClick={() => setShowRegister(true)} style={{ backgroundImage: "url('/images/grid-4.webp')" }}></div>
         </section>
 
         <section className="definition">
