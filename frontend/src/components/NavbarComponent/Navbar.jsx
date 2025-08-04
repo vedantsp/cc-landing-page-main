@@ -23,14 +23,6 @@ export const Navbar = ({ page }) => {
                 <button>About</button>
               </NavLink>
             </li>
-            <li>
-              <NavLink 
-                to="/partner" 
-                className={page === 'Partner' || page === 'Invest' ? "active-link" : ""}
-              >
-                <button>Become a Partner</button>
-              </NavLink>
-            </li>
           </ul>
 
           <ul className="nav-right">
